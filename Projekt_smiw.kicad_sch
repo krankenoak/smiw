@@ -1765,7 +1765,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U1"
+			(property "Reference" "U2"
 				(at 2.1433 -38.1 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2436,10 +2436,10 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin power_in line
 					(at 2.54 38.1 270)
 					(length 2.54)
-					(name "NC"
+					(name "VDD_SPI"
 						(effects
 							(font
 								(size 1.27 1.27)
