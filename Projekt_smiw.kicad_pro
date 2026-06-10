@@ -663,7 +663,7 @@
         "uuid": "632074d6-5d6d-4a29-990c-0b192b6b381d"
       }
     ],
-    "used_designators": "U7",
+    "used_designators": "SW18,C2,J7,R2,#PWR11-22",
     "variants": []
   },
   "sheets": [
