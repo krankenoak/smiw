@@ -1668,6 +1668,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "?A?EWr\n"
+		(exclude_from_sim no)
+		(at 67.564 71.374 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "76757853-4c2e-47fa-9fdb-0c2bddde5ea2")
+	)
 	(junction
 		(at 180.34 88.9)
 		(diameter 0)
