@@ -688,7 +688,7 @@
         "uuid": "632074d6-5d6d-4a29-990c-0b192b6b381d"
       }
     ],
-    "used_designators": "#PWR20,#PWR32-36,C8,C11-15",
+    "used_designators": "U1-8,SW1-18,R1-11,J1-8,D1-4,C1-16,#PWR1-40",
     "variants": []
   },
   "sheets": [
@@ -701,12 +701,12 @@
       "czujnik"
     ],
     [
-      "d5cd91f9-1e43-4778-a798-2ad13ae8c439",
-      "wyświetlacz"
-    ],
-    [
       "632074d6-5d6d-4a29-990c-0b192b6b381d",
       "klawiaturka"
+    ],
+    [
+      "d5cd91f9-1e43-4778-a798-2ad13ae8c439",
+      "wyświetlacz"
     ]
   ],
   "text_variables": {},
