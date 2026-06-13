@@ -69,13 +69,7 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -209,9 +203,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -238,12 +230,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -501,7 +488,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Projekt_smiw.kicad_pro",
+    "filename": "wyświetlacz.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -611,24 +598,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
-      "filter_string": "U",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -668,47 +643,15 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "Projekt_smiw.kicad_sch",
-        "name": "Root",
-        "uuid": "0969a27d-5e52-4b0c-8093-78bbacbcaa35"
-      },
-      {
-        "filename": "czujnik.kicad_sch",
-        "name": "czujnik",
-        "uuid": "7e7ee3eb-03a8-4f9e-bb84-23570f6dcb78"
-      },
-      {
         "filename": "wyświetlacz.kicad_sch",
         "name": "wyświetlacz",
-        "uuid": "d5cd91f9-1e43-4778-a798-2ad13ae8c439"
-      },
-      {
-        "filename": "klawiaturka.kicad_sch",
-        "name": "klawiaturka",
-        "uuid": "632074d6-5d6d-4a29-990c-0b192b6b381d"
+        "uuid": "00000000-0000-0000-0000-000000000000"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [
-    [
-      "0969a27d-5e52-4b0c-8093-78bbacbcaa35",
-      "Root"
-    ],
-    [
-      "7e7ee3eb-03a8-4f9e-bb84-23570f6dcb78",
-      "czujnik"
-    ],
-    [
-      "632074d6-5d6d-4a29-990c-0b192b6b381d",
-      "klawiaturka"
-    ],
-    [
-      "d5cd91f9-1e43-4778-a798-2ad13ae8c439",
-      "wyświetlacz"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
