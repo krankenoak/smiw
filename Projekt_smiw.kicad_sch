@@ -5046,6 +5046,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 139.7) (xy 143.51 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e11a7fa-a291-44dc-ac64-dfa8130ab6db")
+	)
+	(wire
+		(pts
 			(xy 63.5 81.28) (xy 63.5 83.82)
 		)
 		(stroke
@@ -5063,16 +5073,6 @@
 			(type default)
 		)
 		(uuid "205b6dac-62d0-4104-a10b-34f68ab94fd4")
-	)
-	(wire
-		(pts
-			(xy 140.97 139.7) (xy 143.51 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24f23426-a1c1-49f6-9db5-9e9787739f56")
 	)
 	(wire
 		(pts
@@ -5246,16 +5246,6 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 152.4) (xy 143.51 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43c47642-6036-4ea5-967f-5fead81207b5")
-	)
-	(wire
-		(pts
 			(xy 45.72 76.2) (xy 54.61 76.2)
 		)
 		(stroke
@@ -5273,6 +5263,16 @@
 			(type default)
 		)
 		(uuid "45950520-533e-452d-bcc0-3010a97f3706")
+	)
+	(wire
+		(pts
+			(xy 140.97 149.86) (xy 143.51 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45d95596-47d2-4e7e-ad92-2d6045b1756f")
 	)
 	(wire
 		(pts
@@ -5376,6 +5376,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 152.4) (xy 143.51 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "534ce8c5-fe9d-457d-a7ef-52eff13719e7")
+	)
+	(wire
+		(pts
 			(xy 125.73 69.85) (xy 125.73 72.39)
 		)
 		(stroke
@@ -5436,6 +5446,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 137.16) (xy 143.51 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5aaa75b8-2d07-464b-9517-997ea309081c")
+	)
+	(wire
+		(pts
 			(xy 179.07 50.8) (xy 176.53 50.8)
 		)
 		(stroke
@@ -5443,16 +5463,6 @@
 			(type default)
 		)
 		(uuid "5b5a7ffb-ecac-4baa-bcde-65c201e61af6")
-	)
-	(wire
-		(pts
-			(xy 140.97 149.86) (xy 143.51 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e5daff2-0700-4f9c-9fe7-0c462b0a3ee9")
 	)
 	(wire
 		(pts
@@ -7129,16 +7139,6 @@
 		)
 		(uuid "622ae081-26b7-411a-8671-0b94dd918226")
 	)
-	(label "CS FRAM SPI"
-		(at 140.97 139.7 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6311a164-1a9f-46c7-b094-baa0c9354e04")
-	)
 	(label "COL 3"
 		(at 158.75 139.7 0)
 		(effects
@@ -7148,6 +7148,16 @@
 			(justify left bottom)
 		)
 		(uuid "67d1b674-040a-4c28-9c4f-2dd3c573c629")
+	)
+	(label "SDA"
+		(at 140.97 137.16 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69cd27b2-b318-4a57-a143-c18f6577afc0")
 	)
 	(label "COL 2"
 		(at 189.23 76.2 180)
@@ -7208,16 +7218,6 @@
 			(justify right bottom)
 		)
 		(uuid "90920e91-ecf7-40a2-823d-0e5b83f31047")
-	)
-	(label "SCL"
-		(at 140.97 152.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "94c01670-2912-4f5c-a848-f296dd71f9aa")
 	)
 	(label "COL 3"
 		(at 189.23 78.74 180)
@@ -7339,15 +7339,15 @@
 		)
 		(uuid "c6761f2f-89cd-4d88-aa43-1245722fb955")
 	)
-	(label "SDA"
-		(at 140.97 149.86 180)
+	(label "CS FRAM SPI"
+		(at 140.97 152.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "c94cdee4-cb52-4543-aeeb-333f91e50149")
+		(uuid "caeb455f-2af0-49ea-9b7f-03a9cfb3c2a7")
 	)
 	(label "COL 4"
 		(at 158.75 142.24 0)
@@ -7389,15 +7389,15 @@
 		)
 		(uuid "e593340b-5d36-4c41-aade-31fa27e02531")
 	)
-	(label "CS BME280"
-		(at 140.97 137.16 180)
+	(label "SCL"
+		(at 140.97 139.7 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "eab3a06f-78c8-40ab-9cbd-8287dd0071e0")
+		(uuid "eec5799f-8b9e-4203-8931-f29bff8c9659")
 	)
 	(label "D+"
 		(at 54.61 81.28 0)
@@ -7408,6 +7408,16 @@
 			(justify left bottom)
 		)
 		(uuid "f8bff71c-8b08-41b3-876e-7888e8703c00")
+	)
+	(label "CS BME280"
+		(at 140.97 149.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fc1aa054-aa18-42e8-86ad-55e3ecfba0a4")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -11262,22 +11272,22 @@
 			"082a907e-b489-4af6-99fe-28893a68faa4" "0c5ce3e6-df00-48dc-92b8-e9d13d03232e"
 			"0f20faa5-ef3f-4be0-bc53-31d21c09f398" "1146ef05-23e4-4aaa-afe9-edd3204370ef"
 			"18acbce2-de2f-43ee-92a6-d5121b3b753c" "1b792688-d4e0-405e-ab5f-70f2c2eb78f1"
-			"24f23426-a1c1-49f6-9db5-9e9787739f56" "26b79c05-79ca-498f-b28c-426acfac5fa8"
+			"1e11a7fa-a291-44dc-ac64-dfa8130ab6db" "26b79c05-79ca-498f-b28c-426acfac5fa8"
 			"2ac35770-718f-4a48-84e8-7df19a24203a" "3b690422-1398-4f19-a115-6a764ddf8ede"
 			"3fe701a3-8c52-498a-b8b6-cc78b9fede54" "41e67cd6-a75c-4af2-b0ce-c1721934d3a7"
-			"43c47642-6036-4ea5-967f-5fead81207b5" "4449d702-9a81-467e-9b27-92444aee10eb"
+			"4449d702-9a81-467e-9b27-92444aee10eb" "45d95596-47d2-4e7e-ad92-2d6045b1756f"
 			"4cd56b73-3206-410e-8566-ef1e8f544302" "4de851ac-7fe7-41a6-884b-0802e5a547a6"
 			"52148128-f05d-433c-aaa1-32bae2ef2238" "52c47359-2394-4bf0-a33c-6f364d16343a"
-			"586524f3-798c-4c2a-bdea-ce9d090938b2" "5e5daff2-0700-4f9c-9fe7-0c462b0a3ee9"
-			"6311a164-1a9f-46c7-b094-baa0c9354e04" "67d1b674-040a-4c28-9c4f-2dd3c573c629"
-			"7510b667-9784-44a3-9388-662601b5afc4" "7cd5e915-f442-4523-9c24-780c2e9336e1"
-			"89c14eaf-5962-47fe-8ab2-bbd188d53f35" "94c01670-2912-4f5c-a848-f296dd71f9aa"
+			"534ce8c5-fe9d-457d-a7ef-52eff13719e7" "586524f3-798c-4c2a-bdea-ce9d090938b2"
+			"5aaa75b8-2d07-464b-9517-997ea309081c" "67d1b674-040a-4c28-9c4f-2dd3c573c629"
+			"69cd27b2-b318-4a57-a143-c18f6577afc0" "7510b667-9784-44a3-9388-662601b5afc4"
+			"7cd5e915-f442-4523-9c24-780c2e9336e1" "89c14eaf-5962-47fe-8ab2-bbd188d53f35"
 			"9657c4ae-e888-4b50-8727-5b9f0c124c57" "9e721755-3b25-4e25-9e9e-5b7f326dde6b"
 			"b7078fb9-556c-42cd-9c72-1364b61bb7b2" "bed02eec-c0f3-402a-ba93-5a04d69a145a"
-			"c1f92fc0-29cd-4c20-afaa-2d7abac53f88" "c94cdee4-cb52-4543-aeeb-333f91e50149"
+			"c1f92fc0-29cd-4c20-afaa-2d7abac53f88" "caeb455f-2af0-49ea-9b7f-03a9cfb3c2a7"
 			"d0665d1e-2d99-400c-8d23-579234d2159c" "d5b7ff1f-5721-46bc-83dc-c01325e06c89"
-			"e0af1000-64cf-4d41-b3e3-b55613b95f97" "eab3a06f-78c8-40ab-9cbd-8287dd0071e0"
-			"f59b5e1a-80af-4df4-b6c4-3f88f4bdf7e3"
+			"e0af1000-64cf-4d41-b3e3-b55613b95f97" "eec5799f-8b9e-4203-8931-f29bff8c9659"
+			"f59b5e1a-80af-4df4-b6c4-3f88f4bdf7e3" "fc1aa054-aa18-42e8-86ad-55e3ecfba0a4"
 		)
 	)
 	(sheet_instances
