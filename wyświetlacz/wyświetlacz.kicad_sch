@@ -2280,16 +2280,6 @@
 		)
 		(uuid "f52dfe85-80a5-4068-9571-f6af693c2584")
 	)
-	(label "CS FRAM SPI"
-		(at 205.74 44.45 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "03153902-e15d-4334-8f08-8eb4e10839b8")
-	)
 	(label "SDA"
 		(at 171.45 54.61 0)
 		(effects
@@ -2299,6 +2289,26 @@
 			(justify left bottom)
 		)
 		(uuid "06ac238b-5d71-42bf-a3c9-4663304a5ef4")
+	)
+	(label "SCL"
+		(at 205.74 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b65644a-eeb7-42a3-a6b5-c9cefd5b9e16")
+	)
+	(label "SDA"
+		(at 205.74 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1c7af0d7-e38e-4d28-a86a-d8241c081806")
 	)
 	(label "MOSI"
 		(at 205.74 46.99 180)
@@ -2350,7 +2360,7 @@
 		)
 		(uuid "4107bc6c-f621-40e1-8653-ace4892797f0")
 	)
-	(label "SDA"
+	(label "CS BME280"
 		(at 205.74 54.61 180)
 		(effects
 			(font
@@ -2358,7 +2368,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "5734570b-b760-4e66-96e5-12a6810da34d")
+		(uuid "50d17776-1f26-45fb-a260-2adb8423bb04")
 	)
 	(label "MISO"
 		(at 205.74 49.53 180)
@@ -2370,7 +2380,7 @@
 		)
 		(uuid "5f08a674-7e91-4bfd-9008-6387e86e5fb9")
 	)
-	(label "SCL"
+	(label "CS FRAM SPI"
 		(at 205.74 57.15 180)
 		(effects
 			(font
@@ -2378,7 +2388,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "8b37eaf2-e042-480e-b278-a89636a31975")
+		(uuid "724c581c-64b7-4e97-8448-29610291f1f7")
 	)
 	(label "COL 1"
 		(at 223.52 39.37 0)
@@ -2389,16 +2399,6 @@
 			(justify left bottom)
 		)
 		(uuid "9645d19a-a170-4071-b56f-a309f7da7662")
-	)
-	(label "CS BME280"
-		(at 205.74 41.91 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a53f8c8c-0abd-424a-bb87-4fe9ff88665b")
 	)
 	(label "ROW 1"
 		(at 223.52 49.53 0)
@@ -2520,6 +2520,12 @@
 			(uuid "b1fd859a-d527-4558-bd08-26794720d744")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR034")
@@ -2598,6 +2604,12 @@
 			(uuid "f2140df5-a00c-4c3c-ac22-ac3ef395f89c")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR036")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR036")
@@ -2679,6 +2691,12 @@
 			(uuid "87727712-bf03-4bce-8edb-9ee3dec2801a")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "R8")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "R8")
@@ -2766,6 +2784,12 @@
 			(uuid "d2f600e6-cc36-4fca-9a5b-9a48c508c630")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "U8")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "U8")
@@ -2844,6 +2868,12 @@
 			(uuid "095631cb-14cf-4689-9014-4f2c479d961c")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR035")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR035")
@@ -2922,6 +2952,12 @@
 			(uuid "e33703f8-7dd1-4f06-bc22-66468f50e98a")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR031")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR031")
@@ -3000,6 +3036,12 @@
 			(uuid "bcdcbcc1-fa3a-4ebb-8629-c34f43c2a1a2")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR033")
@@ -3105,6 +3147,12 @@
 			(uuid "10c41428-c0e1-446a-8670-5b5d58ef9dfd")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "J9")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "J9")
@@ -3205,6 +3253,12 @@
 			(uuid "d1a71b2a-012f-431a-a152-d24316a0f005")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "J8")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "J8")
@@ -3286,6 +3340,12 @@
 			(uuid "17ea08e0-d02b-4a7f-811b-ac3add9070ea")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "R9")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "R9")
@@ -3367,6 +3427,12 @@
 			(uuid "097a734a-fb67-470b-a86d-ade9a68e3fb3")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "R10")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "R10")
@@ -3446,6 +3512,12 @@
 			(uuid "5783d87e-5929-40c7-af4a-5113c2eb26f6")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "C15")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "C15")
@@ -3545,6 +3617,12 @@
 			(uuid "71271b2e-8141-45f9-a8e4-c64bf83026d3")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "U7")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "U7")
@@ -3623,6 +3701,12 @@
 			(uuid "f8894908-1d5f-47ee-8bd2-d51aff9c7d62")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "#PWR032")
@@ -3704,6 +3788,12 @@
 			(uuid "502095e3-d72d-4b20-a247-e5318a241712")
 		)
 		(instances
+			(project "wyświetlacz"
+				(path "/a85aa644-c8c0-48f2-bd06-479bc968afde"
+					(reference "R11")
+					(unit 1)
+				)
+			)
 			(project "Projekt_smiw"
 				(path "/d5cd91f9-1e43-4778-a798-2ad13ae8c439"
 					(reference "R11")
@@ -3714,22 +3804,22 @@
 	)
 	(group "conn"
 		(uuid "d65cdefe-4d6c-46fc-a1aa-0f92bc1eaee3")
-		(members "03153902-e15d-4334-8f08-8eb4e10839b8" "0eb03138-6980-4ff7-810a-0ffa65b82c27"
-			"1440acc5-9798-46d5-b309-68ee94385d69" "15995232-5adc-4471-b7e8-b078319d211e"
-			"15bcd4b6-2e1f-4223-a590-718acde2d6ee" "236c41c1-10c7-4ac8-ad7d-30609b42287d"
-			"26e1143a-7c1b-48c4-b733-8f4192b23157" "2c70b218-4db1-4412-ab7f-98850486ddcf"
-			"320cb200-7b4b-41de-bcb9-0296de37bb91" "3427defa-3712-4057-bc17-aa233e7be427"
-			"35e96612-090d-4543-942a-91f0965a61e2" "393b176d-6fcc-4f85-9957-ab326870a822"
-			"3b5fc433-c742-4f12-926a-24d45c2710a5" "4107bc6c-f621-40e1-8653-ace4892797f0"
-			"41523854-2de1-4947-82e1-faf6d677a141" "425c6eb8-d8d3-4b34-8397-2c5972bce03e"
-			"508e9f0a-f316-4259-a61c-24a33109cdda" "5734570b-b760-4e66-96e5-12a6810da34d"
-			"57e00876-4017-48b3-979c-7dee161e0bcd" "5e81828b-e9b0-4ec9-bf3c-5515c72c985c"
-			"5f08a674-7e91-4bfd-9008-6387e86e5fb9" "6ad1988a-60ec-4fa4-ae7a-06db5b36d992"
-			"6c13ce2b-1ecd-49cb-bb8f-896598614149" "83e1c29a-b674-466e-ba5a-fff95532b66d"
-			"8b37eaf2-e042-480e-b278-a89636a31975" "8bbc6e05-0527-412c-ac2b-927e147c66c0"
-			"95913eb3-d73c-4136-abfa-1f8217abea73" "95bdf457-0f94-4786-993d-26e574e3e586"
-			"9645d19a-a170-4071-b56f-a309f7da7662" "a4534d7f-f130-4a5c-992e-142b11407aba"
-			"a53f8c8c-0abd-424a-bb87-4fe9ff88665b" "a6adbf17-e335-47bf-b023-b1fd5ccba0df"
+		(members "0eb03138-6980-4ff7-810a-0ffa65b82c27" "1440acc5-9798-46d5-b309-68ee94385d69"
+			"15995232-5adc-4471-b7e8-b078319d211e" "15bcd4b6-2e1f-4223-a590-718acde2d6ee"
+			"1b65644a-eeb7-42a3-a6b5-c9cefd5b9e16" "1c7af0d7-e38e-4d28-a86a-d8241c081806"
+			"236c41c1-10c7-4ac8-ad7d-30609b42287d" "26e1143a-7c1b-48c4-b733-8f4192b23157"
+			"2c70b218-4db1-4412-ab7f-98850486ddcf" "320cb200-7b4b-41de-bcb9-0296de37bb91"
+			"3427defa-3712-4057-bc17-aa233e7be427" "35e96612-090d-4543-942a-91f0965a61e2"
+			"393b176d-6fcc-4f85-9957-ab326870a822" "3b5fc433-c742-4f12-926a-24d45c2710a5"
+			"4107bc6c-f621-40e1-8653-ace4892797f0" "41523854-2de1-4947-82e1-faf6d677a141"
+			"425c6eb8-d8d3-4b34-8397-2c5972bce03e" "508e9f0a-f316-4259-a61c-24a33109cdda"
+			"50d17776-1f26-45fb-a260-2adb8423bb04" "57e00876-4017-48b3-979c-7dee161e0bcd"
+			"5e81828b-e9b0-4ec9-bf3c-5515c72c985c" "5f08a674-7e91-4bfd-9008-6387e86e5fb9"
+			"6ad1988a-60ec-4fa4-ae7a-06db5b36d992" "6c13ce2b-1ecd-49cb-bb8f-896598614149"
+			"724c581c-64b7-4e97-8448-29610291f1f7" "83e1c29a-b674-466e-ba5a-fff95532b66d"
+			"8bbc6e05-0527-412c-ac2b-927e147c66c0" "95913eb3-d73c-4136-abfa-1f8217abea73"
+			"95bdf457-0f94-4786-993d-26e574e3e586" "9645d19a-a170-4071-b56f-a309f7da7662"
+			"a4534d7f-f130-4a5c-992e-142b11407aba" "a6adbf17-e335-47bf-b023-b1fd5ccba0df"
 			"aa186c3e-c41a-48a9-bad2-870db3387964" "b2157496-772d-4819-9276-c32198dbcd68"
 			"b56ee0c8-bb28-498d-abfd-fb9f74f64ec9" "ca8fa204-a847-4cfc-8d12-506b39906e11"
 			"ccf2cc8f-5653-4e90-8bc0-8465157820e4" "dc415e22-42d6-4fc2-a9f3-42a2f64b0af9"
@@ -3741,4 +3831,5 @@
 			(page "4")
 		)
 	)
+	(embedded_fonts no)
 )

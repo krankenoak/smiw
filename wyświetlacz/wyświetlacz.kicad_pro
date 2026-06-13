@@ -645,13 +645,18 @@
       {
         "filename": "wyświetlacz.kicad_sch",
         "name": "wyświetlacz",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "a85aa644-c8c0-48f2-bd06-479bc968afde"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "a85aa644-c8c0-48f2-bd06-479bc968afde",
+      "wyświetlacz"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
