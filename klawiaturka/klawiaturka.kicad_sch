@@ -1544,16 +1544,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 71.12) (xy 196.85 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d38e008-4c74-48fb-91fd-ab4876f88a21")
-	)
-	(wire
-		(pts
 			(xy 99.06 116.84) (xy 99.06 120.65)
 		)
 		(stroke
@@ -1581,6 +1571,16 @@
 			(type default)
 		)
 		(uuid "207a3b6b-acbb-4527-85d8-0e12b605f93b")
+	)
+	(wire
+		(pts
+			(xy 194.31 68.58) (xy 196.85 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21825de0-8377-4f26-b1ab-0adb2a7454fe")
 	)
 	(wire
 		(pts
@@ -1754,6 +1754,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 55.88) (xy 196.85 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b2555b4-7e5f-4749-b105-fc61f43310bc")
+	)
+	(wire
+		(pts
 			(xy 99.06 101.6) (xy 99.06 105.41)
 		)
 		(stroke
@@ -1824,13 +1834,13 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 58.42) (xy 196.85 58.42)
+			(xy 194.31 71.12) (xy 196.85 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53fff72f-7494-4200-a7b7-7e486365f5c5")
+		(uuid "57499524-363a-4e54-b88f-9c6f05b09fa2")
 	)
 	(wire
 		(pts
@@ -1961,6 +1971,16 @@
 			(type default)
 		)
 		(uuid "71d4fcc0-7e6d-4b5f-bd34-9fa6bbe8dd05")
+	)
+	(wire
+		(pts
+			(xy 194.31 58.42) (xy 196.85 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73dcecfe-f886-4866-b511-4e6f857182e7")
 	)
 	(wire
 		(pts
@@ -2121,16 +2141,6 @@
 			(type default)
 		)
 		(uuid "962b02bd-05b8-47c8-9450-8e986a3846f3")
-	)
-	(wire
-		(pts
-			(xy 194.31 55.88) (xy 196.85 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97e9df2d-143d-4231-957f-a2ae933f75f7")
 	)
 	(wire
 		(pts
@@ -2404,16 +2414,6 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 68.58) (xy 196.85 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e70267b8-25e3-40c4-8580-5aad82e5174c")
-	)
-	(wire
-		(pts
 			(xy 153.67 132.08) (xy 153.67 147.32)
 		)
 		(stroke
@@ -2522,6 +2522,16 @@
 		)
 		(uuid "2a7107ae-8c48-49d8-87ff-78652665cb5d")
 	)
+	(label "SCL"
+		(at 194.31 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2f54035a-2f31-4c88-b8a6-b18ab0806e7c")
+	)
 	(label "SCK"
 		(at 194.31 66.04 180)
 		(effects
@@ -2622,16 +2632,6 @@
 		)
 		(uuid "901467d7-e2ab-401c-9f80-03081a7a710b")
 	)
-	(label "CS BME280"
-		(at 194.31 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "9043ee0a-00d7-4bcf-af12-a07864cf8647")
-	)
 	(label "ROW 1"
 		(at 212.09 63.5 0)
 		(effects
@@ -2642,7 +2642,7 @@
 		)
 		(uuid "9c6a93e4-1f70-4940-aa0b-03bd899f7405")
 	)
-	(label "SDA"
+	(label "CS BME280"
 		(at 194.31 68.58 180)
 		(effects
 			(font
@@ -2650,7 +2650,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "9e1f0542-5a95-4d42-a759-be56d059a258")
+		(uuid "a4318a2c-d058-4f06-83dc-b1a4e91514b2")
 	)
 	(label "MOSI"
 		(at 194.31 60.96 180)
@@ -2663,6 +2663,16 @@
 		(uuid "b0cce12e-7cb0-4b97-94b4-58ee79e0ff09")
 	)
 	(label "CS FRAM SPI"
+		(at 194.31 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "bcd5afb9-8891-4cd9-9b17-4499cb4d5b3d")
+	)
+	(label "SDA"
 		(at 194.31 58.42 180)
 		(effects
 			(font
@@ -2670,7 +2680,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "c4a12e6e-4ac6-49e2-8973-442fa4eae3ec")
+		(uuid "becf5c97-f4fc-4d28-a809-7aa3e46a4a1e")
 	)
 	(label "COL 2"
 		(at 212.09 55.88 0)
@@ -2711,16 +2721,6 @@
 			(justify left bottom)
 		)
 		(uuid "f7af2b30-a63b-4c3b-aae4-894a82337d57")
-	)
-	(label "SCL"
-		(at 194.31 71.12 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f8e1d27b-0d3e-488b-8b50-9e3e8f4e8f1e")
 	)
 	(label "COL 3"
 		(at 133.35 76.2 0)
@@ -2810,6 +2810,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW12")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2886,6 +2892,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW8")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW8")
 					(unit 1)
 				)
@@ -3058,6 +3070,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW11")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3134,6 +3152,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW15")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW15")
 					(unit 1)
 				)
@@ -3218,6 +3242,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3232,7 +3262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e539a0c-e018-439b-85b2-423e56b6a122")
-		(property "Reference" "SW3"
+		(property "Reference" "SW1"
 			(at 85.09 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3384,6 +3414,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW9")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3464,6 +3500,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW16")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3540,6 +3582,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW5")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW5")
 					(unit 1)
 				)
@@ -3710,6 +3758,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "#PWR029")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3786,6 +3840,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW4")
 					(unit 1)
 				)
@@ -3870,6 +3930,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW13")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -3946,6 +4012,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW7")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW7")
 					(unit 1)
 				)
@@ -4030,6 +4102,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW10")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4110,6 +4188,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW14")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4186,6 +4270,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "SW17")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "SW17")
 					(unit 1)
 				)
@@ -4378,6 +4468,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "J6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4479,6 +4575,12 @@
 		(instances
 			(project "Projekt_smiw"
 				(path "/632074d6-5d6d-4a29-990c-0b192b6b381d"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
 					(reference "J7")
 					(unit 1)
 				)
@@ -4649,6 +4751,12 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -4729,30 +4837,36 @@
 					(unit 1)
 				)
 			)
+			(project "klawiaturka"
+				(path "/6f31acde-a091-40b7-8cc4-b5bb83c555ef"
+					(reference "SW18")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(group "conn"
 		(uuid "0972d4be-9130-4f70-966b-1a4e77e2919f")
 		(members "045f02d7-7aa9-47ce-9b71-affe68a4c37e" "1bdacc7d-cf53-4979-bd4a-ef14e8e1f974"
-			"1d38e008-4c74-48fb-91fd-ab4876f88a21" "1f7097bc-6ead-4548-9657-2002ead8e0b0"
-			"2a7107ae-8c48-49d8-87ff-78652665cb5d" "3332caad-0a42-4220-8f77-73e6af7a04db"
-			"34eabbb3-5d22-48b7-9fde-60d14454d91f" "38ba6e10-7bcf-498f-90e8-09f073948d79"
-			"4aa7dcc3-85df-4891-8b95-7bad9d0cae5f" "53fff72f-7494-4200-a7b7-7e486365f5c5"
+			"1f7097bc-6ead-4548-9657-2002ead8e0b0" "21825de0-8377-4f26-b1ab-0adb2a7454fe"
+			"2a7107ae-8c48-49d8-87ff-78652665cb5d" "2f54035a-2f31-4c88-b8a6-b18ab0806e7c"
+			"3332caad-0a42-4220-8f77-73e6af7a04db" "34eabbb3-5d22-48b7-9fde-60d14454d91f"
+			"38ba6e10-7bcf-498f-90e8-09f073948d79" "4aa7dcc3-85df-4891-8b95-7bad9d0cae5f"
+			"4b2555b4-7e5f-4749-b105-fc61f43310bc" "57499524-363a-4e54-b88f-9c6f05b09fa2"
 			"5f4f50d2-fba3-4d71-97ce-80529ead0c3f" "66b8eacd-c592-4050-8236-553c545aa362"
 			"69d168ae-dfb8-49b0-b66a-57ec6532c545" "6f8683a5-9f74-4c22-9d3a-dde37785d7d4"
-			"79051540-9062-4276-a92b-97a1bb563576" "84885a11-8552-4e2a-81ff-43cae9fccd26"
-			"8fccb2cc-946f-4c6f-8382-601f25c06cb3" "901467d7-e2ab-401c-9f80-03081a7a710b"
-			"9043ee0a-00d7-4bcf-af12-a07864cf8647" "933d73a0-44a6-4b81-a066-f8888f89b217"
-			"97e9df2d-143d-4231-957f-a2ae933f75f7" "9c6a93e4-1f70-4940-aa0b-03bd899f7405"
-			"9e1f0542-5a95-4d42-a759-be56d059a258" "9f907049-deed-4f5b-b7dd-2f155df1de2e"
-			"a3ff899f-a157-4c14-b7b4-08b02204731a" "af9f6d3f-116d-4059-a742-1e3fb6f5b976"
-			"b0cce12e-7cb0-4b97-94b4-58ee79e0ff09" "b2fbd65c-c850-4228-bcd9-15bdddb08306"
-			"c4a12e6e-4ac6-49e2-8973-442fa4eae3ec" "cf4d2e00-2afa-46df-80b6-826f04499636"
+			"73dcecfe-f886-4866-b511-4e6f857182e7" "79051540-9062-4276-a92b-97a1bb563576"
+			"84885a11-8552-4e2a-81ff-43cae9fccd26" "8fccb2cc-946f-4c6f-8382-601f25c06cb3"
+			"901467d7-e2ab-401c-9f80-03081a7a710b" "933d73a0-44a6-4b81-a066-f8888f89b217"
+			"9c6a93e4-1f70-4940-aa0b-03bd899f7405" "9f907049-deed-4f5b-b7dd-2f155df1de2e"
+			"a3ff899f-a157-4c14-b7b4-08b02204731a" "a4318a2c-d058-4f06-83dc-b1a4e91514b2"
+			"af9f6d3f-116d-4059-a742-1e3fb6f5b976" "b0cce12e-7cb0-4b97-94b4-58ee79e0ff09"
+			"b2fbd65c-c850-4228-bcd9-15bdddb08306" "bcd5afb9-8891-4cd9-9b17-4499cb4d5b3d"
+			"becf5c97-f4fc-4d28-a809-7aa3e46a4a1e" "cf4d2e00-2afa-46df-80b6-826f04499636"
 			"d0a84248-a443-4f90-983e-92b822c1e6b1" "d3c22ba0-3059-4a39-baa5-7008bee10aa4"
 			"d5ed38b6-6b40-41e3-a7ff-1f378759a3a7" "d64d1c85-ddcf-4698-ab64-bd4f4ef04966"
 			"e11c312a-fc22-4b83-a01a-2219b4f0bdcc" "e25a6f0c-bc17-411d-81a1-f693891c7bc4"
-			"e70267b8-25e3-40c4-8580-5aad82e5174c" "f877325c-6844-4ee5-859f-8681b0b641fc"
-			"f8e1d27b-0d3e-488b-8b50-9e3e8f4e8f1e" "fe60c96d-2804-43cb-ac01-82608b86486c"
+			"f877325c-6844-4ee5-859f-8681b0b641fc" "fe60c96d-2804-43cb-ac01-82608b86486c"
 		)
 	)
 	(sheet_instances
@@ -4760,4 +4874,5 @@
 			(page "3")
 		)
 	)
+	(embedded_fonts no)
 )

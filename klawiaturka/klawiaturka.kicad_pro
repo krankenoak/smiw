@@ -645,13 +645,18 @@
       {
         "filename": "klawiaturka.kicad_sch",
         "name": "klawiaturka",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "6f31acde-a091-40b7-8cc4-b5bb83c555ef"
       }
     ],
     "used_designators": "",
     "variants": []
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "6f31acde-a091-40b7-8cc4-b5bb83c555ef",
+      "klawiaturka"
+    ]
+  ],
   "text_variables": {},
   "tuning_profiles": {
     "meta": {
