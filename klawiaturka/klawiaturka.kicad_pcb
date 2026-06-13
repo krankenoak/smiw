@@ -3,38 +3,91 @@
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(general
-		(thickness 1.6)
+		(thickness 1.600198)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
 	(layers
-		(0 "F.Cu" signal)
-		(2 "B.Cu" signal)
-		(9 "F.Adhes" user "F.Adhesive")
-		(11 "B.Adhes" user "B.Adhesive")
+		(0 "F.Cu" signal "Front")
+		(4 "In1.Cu" signal)
+		(6 "In2.Cu" signal)
+		(2 "B.Cu" signal "Back")
 		(13 "F.Paste" user)
 		(15 "B.Paste" user)
 		(5 "F.SilkS" user "F.Silkscreen")
 		(7 "B.SilkS" user "B.Silkscreen")
 		(1 "F.Mask" user)
 		(3 "B.Mask" user)
-		(17 "Dwgs.User" user "User.Drawings")
-		(19 "Cmts.User" user "User.Comments")
-		(21 "Eco1.User" user "User.Eco1")
-		(23 "Eco2.User" user "User.Eco2")
 		(25 "Edge.Cuts" user)
 		(27 "Margin" user)
 		(31 "F.CrtYd" user "F.Courtyard")
 		(29 "B.CrtYd" user "B.Courtyard")
 		(35 "F.Fab" user)
-		(33 "B.Fab" user)
-		(39 "User.1" user)
-		(41 "User.2" user)
-		(43 "User.3" user)
-		(45 "User.4" user)
 	)
 	(setup
+		(stackup
+			(layer "F.SilkS"
+				(type "Top Silk Screen")
+			)
+			(layer "F.Paste"
+				(type "Top Solder Paste")
+			)
+			(layer "F.Mask"
+				(type "Top Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "F.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 1"
+				(type "core")
+				(thickness 0.480066)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In1.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 2"
+				(type "prepreg")
+				(thickness 0.480066)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "In2.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "dielectric 3"
+				(type "core")
+				(thickness 0.480066)
+				(material "FR4")
+				(epsilon_r 4.5)
+				(loss_tangent 0.02)
+			)
+			(layer "B.Cu"
+				(type "copper")
+				(thickness 0.035)
+			)
+			(layer "B.Mask"
+				(type "Bottom Solder Mask")
+				(thickness 0.01)
+			)
+			(layer "B.Paste"
+				(type "Bottom Solder Paste")
+			)
+			(layer "B.SilkS"
+				(type "Bottom Silk Screen")
+			)
+			(copper_finish "None")
+			(dielectric_constraints no)
+		)
 		(pad_to_mask_clearance 0)
+		(solder_mask_min_width 0.12)
 		(allow_soldermask_bridges_in_footprints no)
 		(tenting
 			(front yes)
@@ -90,13 +143,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "1493c3bd-ca24-4c48-94fa-bd301fd17653")
-		(at 147.395 109.475)
+		(at 114.5 107.05)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW10"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "f200d5a0-52cb-4a97-9438-371c5660b83f")
+			(uuid "4e96f284-0e7a-4306-b283-cc24a76a77cd")
 			(effects
 				(font
 					(size 1 1)
@@ -107,7 +160,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "f7fd8846-544b-45bd-b978-6be33b66b0d8")
+			(uuid "883886f2-5d15-440e-9468-79692a53cc54")
 			(effects
 				(font
 					(size 1 1)
@@ -120,7 +173,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6920943f-8c05-444c-a1a8-b002337b8868")
+			(uuid "3c2a3f08-e2ed-4cb1-a0b8-30cbd165d646")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -133,7 +186,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "721ae94c-48ea-4f40-a442-3642e7fe9f1d")
+			(uuid "ef93b435-5134-46f5-9a33-bf66f67490ce")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -446,13 +499,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "26f4163a-14e4-455d-89a7-544b81a24b28")
-		(at 136.16 109.475)
+		(at 93.5 107.35)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW6"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "7bdea734-26e2-46c4-b2e2-8d74104964d4")
+			(uuid "b901276f-ad51-4d7c-9540-429701b2ad02")
 			(effects
 				(font
 					(size 1 1)
@@ -463,7 +516,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "d196925a-cf80-4e62-9f18-876d32cf4d7e")
+			(uuid "b8ee578e-0734-45db-a89a-f0e579f39158")
 			(effects
 				(font
 					(size 1 1)
@@ -476,7 +529,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6996bf91-eeb6-4834-b175-1338a5b62e10")
+			(uuid "583394e0-2c30-4e7a-abec-d0d2ebee440a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -489,7 +542,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "88a3a038-1996-4a9e-baa5-f8f184c5e8aa")
+			(uuid "ca1bcd8c-6628-4122-b3c4-afa3314ea50a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -802,13 +855,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "3849d16c-7d54-4f35-8800-20ede6bcb147")
-		(at 169.865 101.625)
+		(at 157 99.1)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW17"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "6cb33f3a-ca11-4c2f-bf9d-aed989533418")
+			(uuid "6fa4bd4b-b491-42ac-9ab1-3d176d44d1e1")
 			(effects
 				(font
 					(size 1 1)
@@ -819,7 +872,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "cd14c742-0bda-4ab3-a036-e69196b868f5")
+			(uuid "60dd8bbc-231b-420f-b097-add2101bdcf1")
 			(effects
 				(font
 					(size 1 1)
@@ -832,7 +885,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "faa537b5-f259-4453-b8dd-fac4c329fd1a")
+			(uuid "ae918b0e-816c-4efd-a718-03172b41f4dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -845,7 +898,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "259020f9-beeb-418e-891d-3c73048a8fba")
+			(uuid "f297dfe4-564a-4d6c-9079-2bd3e191d01e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1158,13 +1211,13 @@
 	(footprint "Diode_SMD:D_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "402f72fb-dd6f-4225-a532-2594611dea10")
-		(at 186.665 85.885)
+		(at 121.5 72.7125 -90)
 		(descr "Diode SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "diode")
 		(property "Reference" "D2"
-			(at 0 -1.43 0)
+			(at 0 -1.43 90)
 			(layer "F.SilkS")
-			(uuid "3b6e9ed7-356d-4b69-a5c3-a8f75c4c85d2")
+			(uuid "5a296a6b-ed99-4694-a708-7d91e495e42e")
 			(effects
 				(font
 					(size 1 1)
@@ -1173,9 +1226,9 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 0 1.43 0)
+			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "2c77c671-272b-4bec-a54a-d3b4c88c6eeb")
+			(uuid "c72e0582-3813-46aa-961e-29530953625e")
 			(effects
 				(font
 					(size 1 1)
@@ -1184,10 +1237,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f942aa3-c41a-456f-9c81-0d6b714057c1")
+			(uuid "09a0f675-8c0e-4d75-8a25-31ae64f8a9bc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1195,10 +1248,10 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4262ea9f-4134-47cf-b9d5-0eb7a2d73910")
+			(uuid "6069b2cc-1c03-4afb-97d3-9beaa6ca5809")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1206,7 +1259,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "19bce458-3d35-4c46-aafc-0dd59ed619c6")
@@ -1230,16 +1283,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.485 -0.735)
-			(end -1.485 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6ef7dfb8-0972-46ab-ac6e-0f90892acbd2")
-		)
-		(fp_line
 			(start -1.485 0.735)
 			(end 0.8 0.735)
 			(stroke
@@ -1248,6 +1291,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "33eadbb9-1dee-4c40-b5c0-67d3f9c13489")
+		)
+		(fp_line
+			(start -1.485 -0.735)
+			(end -1.485 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6ef7dfb8-0972-46ab-ac6e-0f90892acbd2")
 		)
 		(fp_line
 			(start 0.8 -0.735)
@@ -1271,16 +1324,6 @@
 			(uuid "012da66f-3511-4774-a892-fea8ff521856")
 		)
 		(fp_line
-			(start -0.8 -0.1)
-			(end -0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "8f8ad2d8-9f46-42f1-869e-b226c6c1bd98")
-		)
-		(fp_line
 			(start -0.8 0.4)
 			(end 0.8 0.4)
 			(stroke
@@ -1289,6 +1332,26 @@
 			)
 			(layer "F.Fab")
 			(uuid "b1acb5a5-519a-49bf-8f7c-8562d63c67d6")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "358cf370-a15c-438a-89af-7262e288dea0")
+		)
+		(fp_line
+			(start -0.8 -0.1)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8f8ad2d8-9f46-42f1-869e-b226c6c1bd98")
 		)
 		(fp_line
 			(start -0.5 -0.4)
@@ -1310,18 +1373,8 @@
 			(layer "F.Fab")
 			(uuid "9065346c-83c9-4d82-96b3-fbe2d743eb01")
 		)
-		(fp_line
-			(start 0.8 0.4)
-			(end 0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "358cf370-a15c-438a-89af-7262e288dea0")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "13ac2d49-10cc-4c85-b41e-a14c51095df7")
 			(effects
@@ -1332,7 +1385,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.7875 0)
+			(at -0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -1342,7 +1395,7 @@
 			(uuid "26bd3d81-3ed6-426f-8f13-ff533fcf178b")
 		)
 		(pad "2" smd roundrect
-			(at 0.7875 0)
+			(at 0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -1367,13 +1420,13 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "46385f11-9ea9-44b3-bd81-e436921a07cc")
-		(at 182.325 84.295)
+		(at 76 85.22)
 		(descr "Through hole straight pin header, 1x10, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x10 2.54mm single row")
 		(property "Reference" "J7"
 			(at 0 -2.38 0)
 			(layer "F.SilkS")
-			(uuid "4472aedb-7e95-44d5-a6d1-1927ea606356")
+			(uuid "3daac2c3-8a7d-4ca2-ba13-288f535755b6")
 			(effects
 				(font
 					(size 1 1)
@@ -1384,7 +1437,7 @@
 		(property "Value" "Conn_01x10"
 			(at 0 25.24 0)
 			(layer "F.Fab")
-			(uuid "469ed909-a95d-44b3-a95f-4c629bce2c91")
+			(uuid "c7aab943-fad6-4a00-adee-5f236a95d43e")
 			(effects
 				(font
 					(size 1 1)
@@ -1396,7 +1449,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "138b74ba-2581-4677-8d02-3e3ee7eb604e")
+			(uuid "8c77f08c-62eb-4954-8d6e-1f4bd33e6710")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1407,7 +1460,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e1ae46e-f779-4f8b-b346-694b8a7bf6c4")
+			(uuid "32231e1d-3390-4801-b863-f0efbef65227")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1696,13 +1749,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "50ba031a-f7a3-45c4-9044-87f231f4452a")
-		(at 158.63 101.625)
+		(at 135 99.15)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW13"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "8dd9d1c7-4420-494b-b923-2ee50cd9ce37")
+			(uuid "fa9d734c-1cb9-45d0-a7c1-96e6f395cc1b")
 			(effects
 				(font
 					(size 1 1)
@@ -1713,7 +1766,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "c36c5a1d-c079-4d88-a118-074483194559")
+			(uuid "de844a28-9108-4196-98f6-438d3ad7f96f")
 			(effects
 				(font
 					(size 1 1)
@@ -1726,7 +1779,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "12194a99-c593-4161-b34f-65f90285d6dc")
+			(uuid "f2ac6449-885c-4b39-b0e4-f63a2670cf28")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1739,7 +1792,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f61cdc14-f06a-4caf-bd0f-62dd7808a094")
+			(uuid "08a44e1d-fece-4847-b774-97d079477c40")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2052,13 +2105,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "680e5dc4-7eb5-4fbb-b4a1-4a863cc63cdd")
-		(at 147.395 85.925)
+		(at 114.5 83.5)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW7"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "01ef8ecd-1720-493b-8d53-adc4ebb30dde")
+			(uuid "1e6a0b51-89b6-48ea-9273-4626e419e94c")
 			(effects
 				(font
 					(size 1 1)
@@ -2069,7 +2122,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "5071b67d-7c49-47d6-b891-417b7676d50d")
+			(uuid "6e9a222e-c523-401b-8527-e3bccfc64e98")
 			(effects
 				(font
 					(size 1 1)
@@ -2082,7 +2135,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a5c90b51-6170-465a-a361-5f7c7bd19680")
+			(uuid "da2651b5-d05d-453e-a990-7570a0e3937a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2095,7 +2148,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8c630e5b-f689-47ef-8ae6-62ee8d9dc027")
+			(uuid "d70a7e7c-50e8-438c-84e8-d4110e957089")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2408,13 +2461,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "6904cc1b-12d3-4295-8fe1-0e882d6e8b52")
-		(at 158.63 109.475)
+		(at 135 107)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW14"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "039d870d-5836-42b9-903e-d37b809acf74")
+			(uuid "d97a431e-4dfd-4226-95e6-f47c056c804a")
 			(effects
 				(font
 					(size 1 1)
@@ -2425,7 +2478,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "45a8f75a-d679-4d62-b655-fca3ed4ced16")
+			(uuid "3cf7994e-e6c4-4ce3-872d-bca955e6042d")
 			(effects
 				(font
 					(size 1 1)
@@ -2438,7 +2491,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0241bc56-afe5-4dd9-afbc-5c70d32a28aa")
+			(uuid "ef7b5537-970b-43d9-aea4-bafec6d9c1d4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2451,7 +2504,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "82f5bf86-0b03-4de3-ae21-5a85213d764f")
+			(uuid "02bff4b6-3cbe-464b-a82a-58c2f7ca7c36")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2764,13 +2817,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "76beac03-1747-44e0-8f56-4476a302bdd5")
-		(at 147.395 101.625)
+		(at 114.5 99.2)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW9"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "c14dddfc-b701-4217-8651-bd0db2a4c57a")
+			(uuid "628363f1-2720-4bfb-be36-3db31b72b110")
 			(effects
 				(font
 					(size 1 1)
@@ -2781,7 +2834,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "3191151f-9a7f-42dd-ac34-645b8cb0fd40")
+			(uuid "8df70a30-ed68-4ebe-be4b-18d28000a342")
 			(effects
 				(font
 					(size 1 1)
@@ -2794,7 +2847,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "63f70484-1a84-454f-b64e-91566cd83b4a")
+			(uuid "889d3152-f744-4def-be15-814c0d2ed7e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2807,7 +2860,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "28176588-5e49-4a28-a1cd-06b8b58d4cf3")
+			(uuid "9a81e000-9735-41cf-897a-80f24b2a23f7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3120,7 +3173,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "85342e4b-68e7-4351-9916-d7576b3466d8")
-		(at 136.16 101.625)
+		(at 93.5 99.5)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW5"
@@ -3476,7 +3529,7 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "8962588f-9e75-42d6-a4c5-aa505340380e")
-		(at 136.16 93.775)
+		(at 93.5 91.65)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW4"
@@ -3832,13 +3885,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "91166911-cd08-40c3-bba4-138642c93dbd")
-		(at 158.63 93.775)
+		(at 135 91.3)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW12"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "fcc48f6b-891c-4467-9163-6616db51737a")
+			(uuid "09d3c958-36ef-42d4-b86b-21fe84fe1936")
 			(effects
 				(font
 					(size 1 1)
@@ -3849,7 +3902,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "e2b81eb8-205f-4151-820a-c5737b63c99e")
+			(uuid "0202d8c0-b59e-4da2-9e39-489e34a5a0ba")
 			(effects
 				(font
 					(size 1 1)
@@ -3862,7 +3915,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "24420dba-2dec-49c9-9556-7f2a53db644c")
+			(uuid "94b7a05a-87fb-4db7-b816-13dcab68f67e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3875,7 +3928,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2f96f085-60f2-40d3-81d6-946a95889dd9")
+			(uuid "173d0418-99c1-4f6e-9042-f287da8518c2")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4188,13 +4241,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "947e8473-4785-4c04-83fe-d31237f43303")
-		(at 169.865 85.925)
+		(at 157 83.4)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW15"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "45eef55d-1c76-4ba1-ab29-2251143ab676")
+			(uuid "8d77ac06-ade2-4eb8-bd4e-cbfc8b2ded0b")
 			(effects
 				(font
 					(size 1 1)
@@ -4205,7 +4258,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "e2025c8e-b475-469b-8736-7e7e0e3dde05")
+			(uuid "c2c83b44-b6b4-4726-b2cf-04e474531fb5")
 			(effects
 				(font
 					(size 1 1)
@@ -4218,7 +4271,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bdf9cd09-7b05-4405-b006-a03b216fd8ea")
+			(uuid "077c2e92-2744-447e-8d5d-b13969a140b6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4284,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7fc145ef-ad17-4b92-9727-828728831c58")
+			(uuid "d711672a-72c1-425b-9d82-cab4f42921b9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4544,13 +4597,13 @@
 	(footprint "Diode_SMD:D_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "a28682e4-f7e9-4b48-bac7-f411d2bdfe5e")
-		(at 186.665 88.475)
+		(at 143.5 72.6625 -90)
 		(descr "Diode SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "diode")
 		(property "Reference" "D3"
-			(at 0 -1.43 0)
+			(at 0 -1.43 90)
 			(layer "F.SilkS")
-			(uuid "4285e2c4-239b-4664-b9d2-b4f71aa2435f")
+			(uuid "39aa2420-9230-4312-9ed8-f1983cbb1944")
 			(effects
 				(font
 					(size 1 1)
@@ -4559,9 +4612,9 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 0 1.43 0)
+			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "9662bdb0-0191-4f9e-8cb5-866c82ad11c9")
+			(uuid "cc913c2e-9d47-4a43-8ed7-aa31d76630d8")
 			(effects
 				(font
 					(size 1 1)
@@ -4570,10 +4623,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b02065b1-6fcc-46bc-bc5d-18ad938f9c67")
+			(uuid "c564faf1-015c-47da-bfc3-ced950c65b15")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4581,10 +4634,10 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d149702f-8701-4de3-8be1-8da6d1a4c58a")
+			(uuid "5b085cb7-eb2d-43a2-9c8e-cf3127e61cfa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4592,7 +4645,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a74c71ed-052d-4d7a-aec8-d8e94c5e25b3")
@@ -4616,16 +4669,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.485 -0.735)
-			(end -1.485 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "cdba571e-359d-42be-b68c-20d54db631d7")
-		)
-		(fp_line
 			(start -1.485 0.735)
 			(end 0.8 0.735)
 			(stroke
@@ -4634,6 +4677,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "079f0c91-7a3b-40a0-a7b2-77fcdfc8d32d")
+		)
+		(fp_line
+			(start -1.485 -0.735)
+			(end -1.485 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cdba571e-359d-42be-b68c-20d54db631d7")
 		)
 		(fp_line
 			(start 0.8 -0.735)
@@ -4657,16 +4710,6 @@
 			(uuid "1a9ac889-2269-4733-b17f-0b18b6ed49e1")
 		)
 		(fp_line
-			(start -0.8 -0.1)
-			(end -0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "01e61730-8e57-40f8-a362-996efbdf8bb5")
-		)
-		(fp_line
 			(start -0.8 0.4)
 			(end 0.8 0.4)
 			(stroke
@@ -4675,6 +4718,26 @@
 			)
 			(layer "F.Fab")
 			(uuid "6698da42-04b1-47fc-aaea-d9bccf943e36")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bed17c88-449a-48f3-b5ed-42b32010bd18")
+		)
+		(fp_line
+			(start -0.8 -0.1)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "01e61730-8e57-40f8-a362-996efbdf8bb5")
 		)
 		(fp_line
 			(start -0.5 -0.4)
@@ -4696,18 +4759,8 @@
 			(layer "F.Fab")
 			(uuid "1796321e-90ab-4fe7-a7d1-3bd026fc2ea7")
 		)
-		(fp_line
-			(start 0.8 0.4)
-			(end 0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "bed17c88-449a-48f3-b5ed-42b32010bd18")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "9fe2f71e-10b1-44d4-bbdd-b32c29e3d43f")
 			(effects
@@ -4718,7 +4771,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.7875 0)
+			(at -0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4728,7 +4781,7 @@
 			(uuid "5bb66602-223b-4600-90c5-9d3db2b4f0b7")
 		)
 		(pad "2" smd roundrect
-			(at 0.7875 0)
+			(at 0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -4753,13 +4806,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "a2e4d972-ef90-4654-b582-f920607f6511")
-		(at 169.865 109.475)
+		(at 157 106.95)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW18"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "d732348d-31c8-4d34-af0f-ec744f9534b3")
+			(uuid "c7dd2bfe-5ac2-465f-9d33-39ab077a9ed1")
 			(effects
 				(font
 					(size 1 1)
@@ -4770,7 +4823,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "7e02c882-52ce-4206-9f4f-d1757a3a2a56")
+			(uuid "61220b08-d678-4726-977e-59a9bc416410")
 			(effects
 				(font
 					(size 1 1)
@@ -4783,7 +4836,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "85fa9dfc-00f9-4898-9495-bf89cc97dda9")
+			(uuid "b82d16c5-fe22-456b-91f8-e937978ce41b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4796,7 +4849,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e9910712-7856-4e26-833e-5a771a28028c")
+			(uuid "aa8a94d4-ea11-4455-9e83-5dcec364a877")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5109,13 +5162,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "a40bd360-d8cc-413c-b371-90097ac297f0")
-		(at 158.63 85.925)
+		(at 135 83.45)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW11"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "c025b4e5-9c37-4490-9dc5-0eb9ed61c46f")
+			(uuid "28416cc1-a026-45e2-9654-89ace421092b")
 			(effects
 				(font
 					(size 1 1)
@@ -5126,7 +5179,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "bb2d153a-98c7-4cda-b7bb-6f617f34b76d")
+			(uuid "fb1d6f0e-c04f-4226-8417-b8714c9b19a9")
 			(effects
 				(font
 					(size 1 1)
@@ -5139,7 +5192,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "003219c4-18d1-4ffa-9a5b-106311f2dd74")
+			(uuid "1ca1c50a-d0b7-4019-9ba2-783910788f5e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5152,7 +5205,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2b83ad99-c68a-40ea-a29a-54f5abfbc350")
+			(uuid "1d789443-84f5-4454-8cd2-95801a068223")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5465,10 +5518,10 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "aa5537fb-d2c4-4743-9bc8-0f7a13ca1d1c")
-		(at 136.16 85.925)
+		(at 93.5 83.8)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
-		(property "Reference" "SW1"
+		(property "Reference" "SW3"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
 			(uuid "550e9855-4eeb-436b-865d-225e32ec52d7")
@@ -5821,13 +5874,13 @@
 	(footprint "Diode_SMD:D_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "c3d676a9-9bf2-400e-8123-29ea2cf59a51")
-		(at 186.665 91.065)
+		(at 166 72.95 -90)
 		(descr "Diode SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "diode")
 		(property "Reference" "D4"
-			(at 0 -1.43 0)
+			(at 0 -1.43 90)
 			(layer "F.SilkS")
-			(uuid "75e27ae5-f847-4089-a417-05bae0eb3bd0")
+			(uuid "d0c84025-4e67-4523-89ec-3d27575fef3b")
 			(effects
 				(font
 					(size 1 1)
@@ -5836,9 +5889,9 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 0 1.43 0)
+			(at 0 1.43 90)
 			(layer "F.Fab")
-			(uuid "001cce8d-d81f-48e7-adc0-9d1692e82abc")
+			(uuid "1c982e85-74b0-4786-906a-0be78ed0243b")
 			(effects
 				(font
 					(size 1 1)
@@ -5847,10 +5900,10 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b61412e6-009c-43b5-a8a4-09849291d610")
+			(uuid "9afca542-eba1-4e90-b847-924632f413c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5858,10 +5911,10 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "622b83d6-c912-4a7d-9c81-7adfa6f71315")
+			(uuid "39b9f085-776d-4195-a110-b29fc34b7afe")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5869,7 +5922,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c23b652a-e009-4639-bd31-9c81bc00e53a")
@@ -5893,16 +5946,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.485 -0.735)
-			(end -1.485 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "d726c694-a763-4846-890b-3a0300461c3c")
-		)
-		(fp_line
 			(start -1.485 0.735)
 			(end 0.8 0.735)
 			(stroke
@@ -5911,6 +5954,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "e9eaabfa-ba55-47bb-b409-3b90bfc0dc1b")
+		)
+		(fp_line
+			(start -1.485 -0.735)
+			(end -1.485 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d726c694-a763-4846-890b-3a0300461c3c")
 		)
 		(fp_line
 			(start 0.8 -0.735)
@@ -5934,16 +5987,6 @@
 			(uuid "722287cd-59a2-4c74-940c-f8b81145f6bf")
 		)
 		(fp_line
-			(start -0.8 -0.1)
-			(end -0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "438cbd3f-974b-458d-bb3a-7eaaa0d072fb")
-		)
-		(fp_line
 			(start -0.8 0.4)
 			(end 0.8 0.4)
 			(stroke
@@ -5952,6 +5995,26 @@
 			)
 			(layer "F.Fab")
 			(uuid "0a0703f8-6e9d-4b7f-85c1-afbd03e1550a")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "275656e5-d8d4-405e-b075-2813fbb7a9dd")
+		)
+		(fp_line
+			(start -0.8 -0.1)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "438cbd3f-974b-458d-bb3a-7eaaa0d072fb")
 		)
 		(fp_line
 			(start -0.5 -0.4)
@@ -5973,18 +6036,8 @@
 			(layer "F.Fab")
 			(uuid "3eccdd21-00a6-4995-87f9-83fdf6d1d30a")
 		)
-		(fp_line
-			(start 0.8 0.4)
-			(end 0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "275656e5-d8d4-405e-b075-2813fbb7a9dd")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "fe916fa7-5d59-41ce-9605-3ea34484b555")
 			(effects
@@ -5995,7 +6048,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.7875 0)
+			(at -0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6005,7 +6058,7 @@
 			(uuid "f0852632-e471-462e-93d4-b17a7ec7eb3c")
 		)
 		(pad "2" smd roundrect
-			(at 0.7875 0)
+			(at 0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6030,13 +6083,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "cce77f89-1b59-4359-b636-cca4b8d00446")
-		(at 169.865 93.775)
+		(at 157 91.25)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW16"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "6ac1d4be-3250-4232-897f-e5ee871a2c2f")
+			(uuid "bd70fcb2-1dce-48e4-826e-688b8bad6dbc")
 			(effects
 				(font
 					(size 1 1)
@@ -6047,7 +6100,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "610221d9-8f90-4d34-bd3e-70ffc3a8d31a")
+			(uuid "87e75a75-7ef7-4656-a8af-0a497ab70b02")
 			(effects
 				(font
 					(size 1 1)
@@ -6060,7 +6113,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e08ee777-b826-4431-97a3-9de751475f22")
+			(uuid "8c12c376-fc33-4ebf-b1a1-731cf19325ea")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6073,7 +6126,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab6ddc79-adad-4c36-9c55-97ace5b17d7c")
+			(uuid "d796927c-be03-4208-82bf-b6b2527cb1ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6386,7 +6439,7 @@
 	(footprint "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "db6649f1-8069-400c-a32c-2680441e903c")
-		(at 177.735 84.295)
+		(at 169.5 85.8)
 		(descr "Through hole straight pin header, 1x08, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x08 2.54mm single row")
 		(property "Reference" "J6"
@@ -6693,11 +6746,11 @@
 	(footprint "Diode_SMD:D_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "dd8c24a3-330c-40e0-a469-d8187fe07af1")
-		(at 186.665 83.295)
+		(at 101 73.35 -90)
 		(descr "Diode SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)")
 		(tags "diode")
 		(property "Reference" "D1"
-			(at 0 -1.43 0)
+			(at 0 -1.43 90)
 			(layer "F.SilkS")
 			(uuid "630cc3e8-a4a3-43cd-b607-484c923ff5ff")
 			(effects
@@ -6708,7 +6761,7 @@
 			)
 		)
 		(property "Value" "D_Schottky"
-			(at 0 1.43 0)
+			(at 0 1.43 90)
 			(layer "F.Fab")
 			(uuid "018a215b-2a28-4389-8f52-dd124fd69df7")
 			(effects
@@ -6719,7 +6772,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3f69cdb3-6b68-43dd-8029-9b33e0ce4156")
@@ -6730,7 +6783,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3bcc4cc9-316e-4300-83dd-8ecd268af8f3")
@@ -6741,7 +6794,7 @@
 			)
 		)
 		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "699005bc-2489-4e8a-b246-a783511e0ad2")
@@ -6765,16 +6818,6 @@
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
-			(start -1.485 -0.735)
-			(end -1.485 0.735)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "23f7697c-0c92-416b-bc87-5da0bb26fe25")
-		)
-		(fp_line
 			(start -1.485 0.735)
 			(end 0.8 0.735)
 			(stroke
@@ -6783,6 +6826,16 @@
 			)
 			(layer "F.SilkS")
 			(uuid "7dbf134f-411f-4af3-b775-7b63097b0453")
+		)
+		(fp_line
+			(start -1.485 -0.735)
+			(end -1.485 0.735)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "23f7697c-0c92-416b-bc87-5da0bb26fe25")
 		)
 		(fp_line
 			(start 0.8 -0.735)
@@ -6806,16 +6859,6 @@
 			(uuid "c781c04c-b571-4aa3-9b83-27922cba25b2")
 		)
 		(fp_line
-			(start -0.8 -0.1)
-			(end -0.8 0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "36ce2b1e-98dc-462b-b979-bc64489796b9")
-		)
-		(fp_line
 			(start -0.8 0.4)
 			(end 0.8 0.4)
 			(stroke
@@ -6824,6 +6867,26 @@
 			)
 			(layer "F.Fab")
 			(uuid "6868cf90-30b1-4bcd-81aa-555b8bf68ea4")
+		)
+		(fp_line
+			(start 0.8 0.4)
+			(end 0.8 -0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "63e04bc4-0239-4118-bbc0-984ae97173bf")
+		)
+		(fp_line
+			(start -0.8 -0.1)
+			(end -0.8 0.4)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "36ce2b1e-98dc-462b-b979-bc64489796b9")
 		)
 		(fp_line
 			(start -0.5 -0.4)
@@ -6845,18 +6908,8 @@
 			(layer "F.Fab")
 			(uuid "7dd059b6-56b8-48cc-bbec-efca9ec55bf0")
 		)
-		(fp_line
-			(start 0.8 0.4)
-			(end 0.8 -0.4)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "63e04bc4-0239-4118-bbc0-984ae97173bf")
-		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 0)
+			(at 0 0 90)
 			(layer "F.Fab")
 			(uuid "13bb3958-4a06-44cf-9fc1-e670b4b9df5d")
 			(effects
@@ -6867,7 +6920,7 @@
 			)
 		)
 		(pad "1" smd roundrect
-			(at -0.7875 0)
+			(at -0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6877,7 +6930,7 @@
 			(uuid "7a97cea5-223d-4f77-a533-3b9affb28a5f")
 		)
 		(pad "2" smd roundrect
-			(at 0.7875 0)
+			(at 0.7875 0 270)
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.25)
@@ -6902,13 +6955,13 @@
 	(footprint "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
 		(layer "F.Cu")
 		(uuid "dead894f-83ef-4d9b-8551-be1423924c6d")
-		(at 147.395 93.775)
+		(at 114.5 91.35)
 		(descr "Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf")
 		(tags "Tactile Switch")
 		(property "Reference" "SW8"
 			(at 0 -4.3 0)
 			(layer "F.SilkS")
-			(uuid "ee367caf-7ad9-4994-99e3-2f0b50a738d1")
+			(uuid "8e311566-77a0-4ee0-af49-ffadd747f541")
 			(effects
 				(font
 					(size 1 1)
@@ -6919,7 +6972,7 @@
 		(property "Value" "SW_Push"
 			(at 0 4.2 0)
 			(layer "F.Fab")
-			(uuid "4cce26d3-cbd2-4351-b1b1-022f0a71c1fd")
+			(uuid "4d68bfa7-46ad-46e1-adbc-3b3c95db5614")
 			(effects
 				(font
 					(size 1 1)
@@ -6932,7 +6985,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d0840b88-f4d7-4ddc-9c3e-2e8c1e467eed")
+			(uuid "3015207f-e356-432d-befa-cb3aac9e96eb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6945,7 +6998,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5ffbece5-11dc-4b37-8724-9da6a8f27b50")
+			(uuid "9f9fc041-8490-4e5b-8b31-90b260a8fe67")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7254,6 +7307,1337 @@
 				(xyz 0 0 0)
 			)
 		)
+	)
+	(gr_rect
+		(start 73.5 70)
+		(end 172 119)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "5051d45a-98ac-4d9a-a58f-fc5aae983e93")
+	)
+	(segment
+		(start 108.65 104.8)
+		(end 110.5 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "1f7f4475-1cd7-419c-b3c9-2d6c87e7da55")
+	)
+	(segment
+		(start 129.15 104.8)
+		(end 131 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "381cb434-03c9-4589-a2d7-46122389e26b")
+	)
+	(segment
+		(start 89.5 105.1)
+		(end 97.5 105.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "4983b3e8-e522-44ed-bda5-1245496ed557")
+	)
+	(segment
+		(start 153 104.7)
+		(end 161 104.7)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "6566ce9d-9783-4073-a095-c551fa48dfc4")
+	)
+	(segment
+		(start 151.15 104.8)
+		(end 153 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "672be7e6-4890-469c-9ce9-bba26b862d5b")
+	)
+	(segment
+		(start 128 105.95)
+		(end 129.15 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "7f912d63-e376-453b-8998-273f4900234b")
+	)
+	(segment
+		(start 128 117.95)
+		(end 128 105.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "8103499c-e318-4234-9af2-959dd14bdbf1")
+	)
+	(segment
+		(start 131 104.75)
+		(end 139 104.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "8f5b6c36-90a6-45ef-aa04-a2c30dece02d")
+	)
+	(segment
+		(start 107.5 105.95)
+		(end 108.65 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "9de4f0be-782b-426b-b885-5797aa59226e")
+	)
+	(segment
+		(start 89.5 105.1)
+		(end 78.1 105.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "a4b4baef-479a-49cb-8ac4-47a7b758e3c9")
+	)
+	(segment
+		(start 110.5 104.8)
+		(end 118.5 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "a90c9905-4e43-4e4b-a53c-cb16f1f9823f")
+	)
+	(segment
+		(start 78.1 105.1)
+		(end 76 103)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "c30d7dbe-429f-4e9c-b36d-55903c702e0f")
+	)
+	(segment
+		(start 150 105.95)
+		(end 151.15 104.8)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "cac2f485-b1aa-4754-af1a-228b93700c89")
+	)
+	(segment
+		(start 150 117.95)
+		(end 150 105.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "f05d13be-7c3a-44a8-a98c-b19ffad178ee")
+	)
+	(segment
+		(start 107.5 117.95)
+		(end 107.5 105.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 4")
+		(uuid "fd326d10-f592-4197-b463-8e734b21692a")
+	)
+	(via
+		(at 128 117.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 4")
+		(uuid "014347e7-f46d-4623-8854-475e35176496")
+	)
+	(via
+		(at 150 117.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 4")
+		(uuid "57dfe638-c382-4657-9b7e-fbc03e09231a")
+	)
+	(via
+		(at 107.5 117.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 4")
+		(uuid "ce01c3bb-58ab-419f-8997-3960d4bb548b")
+	)
+	(segment
+		(start 149.95 118)
+		(end 84 118)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 4")
+		(uuid "133e53fe-206c-48dc-8b52-996e28996945")
+	)
+	(segment
+		(start 150 117.95)
+		(end 149.95 118)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 4")
+		(uuid "3a519705-4c61-42f9-92f0-4938920fae24")
+	)
+	(segment
+		(start 84 118)
+		(end 81 115)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 4")
+		(uuid "4a469073-b3f5-441d-9117-a97824d07f1c")
+	)
+	(segment
+		(start 81 115)
+		(end 81 108)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 4")
+		(uuid "4d687d17-e79e-43d9-bbe8-a6fbecb72769")
+	)
+	(segment
+		(start 81 108)
+		(end 76 103)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 4")
+		(uuid "87192d27-d2e1-4e06-8ffa-8b9b20079eed")
+	)
+	(segment
+		(start 110.5 93.6)
+		(end 118.5 93.6)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "06ef1b21-3636-4532-a3ef-fd953fdbb310")
+	)
+	(segment
+		(start 110.5 109.3)
+		(end 118.5 109.3)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "0a4a9ff3-f297-4152-a2a2-7a95083ccec0")
+	)
+	(segment
+		(start 118.5 101.45)
+		(end 121.5 98.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "161e287f-7ce3-4f19-a06c-ab066976dc46")
+	)
+	(segment
+		(start 118.5 93.6)
+		(end 121.5 90.6)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "23fe2e83-b1f9-495b-9ec7-5677016cc560")
+	)
+	(segment
+		(start 118.5 85.75)
+		(end 110.5 85.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "5a8353c0-181e-426b-918e-7db401b8d8a2")
+	)
+	(segment
+		(start 118.5 109.3)
+		(end 121.5 106.3)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "76ddb886-9d08-4b7c-8eec-dc72f2a779d9")
+	)
+	(segment
+		(start 121.5 82.75)
+		(end 121.5 73.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "9e9974a3-9cff-4542-ab84-32c44ab341a3")
+	)
+	(segment
+		(start 118.5 85.75)
+		(end 121.5 82.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "b87aa792-6191-4e5c-95d1-43005035351a")
+	)
+	(segment
+		(start 121.5 98.45)
+		(end 121.5 90.6)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "cf7168a2-b0e0-4fc1-9a93-5b40ac89aafa")
+	)
+	(segment
+		(start 118.5 101.45)
+		(end 110.5 101.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "e4b0f46d-0b43-4878-b7f6-9a370544aeae")
+	)
+	(segment
+		(start 121.5 90.6)
+		(end 121.5 82.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "e8ed90d7-a361-48ef-a07c-10aed9f594cc")
+	)
+	(segment
+		(start 121.5 106.3)
+		(end 121.5 98.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D2-A)")
+		(uuid "f25983f5-1690-4794-941a-4485f14ce0a0")
+	)
+	(segment
+		(start 97.5 86.05)
+		(end 101 82.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "09b2eabb-9202-4aba-b0be-f8586303df24")
+	)
+	(segment
+		(start 101 90.4)
+		(end 101 82.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "226aa84e-2181-4cb8-9737-85ddc2d28088")
+	)
+	(segment
+		(start 101 98.25)
+		(end 101 90.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "4ebfb1da-83f2-4644-942c-79e4d18055d4")
+	)
+	(segment
+		(start 89.5 86.05)
+		(end 97.5 86.05)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "5cd28f04-ae22-4dbd-b76b-dc1b76087fec")
+	)
+	(segment
+		(start 97.5 101.75)
+		(end 101 98.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "776a5981-2fab-4384-acb2-c09da5f5578b")
+	)
+	(segment
+		(start 101 106.1)
+		(end 101 98.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "a5dda707-9a10-4092-8cd2-fad6b26237ea")
+	)
+	(segment
+		(start 89.5 109.6)
+		(end 97.5 109.6)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "b80747cd-622b-4c31-9974-aba0aee47612")
+	)
+	(segment
+		(start 101 82.55)
+		(end 101 74.1375)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "cbeae695-80ba-4c8d-bba0-19b57ed70754")
+	)
+	(segment
+		(start 97.5 93.9)
+		(end 101 90.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "d59b476b-d181-4887-8a64-830c57c35a90")
+	)
+	(segment
+		(start 89.5 101.75)
+		(end 97.5 101.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "dbbce2ed-3e21-4889-829f-0b29e6690d93")
+	)
+	(segment
+		(start 97.5 109.6)
+		(end 101 106.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "f976f2c0-b3d9-4682-9119-dd0ee406f1f7")
+	)
+	(segment
+		(start 89.5 93.9)
+		(end 97.5 93.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D1-A)")
+		(uuid "fcf20dac-b923-4221-91b1-7365e7f8d29b")
+	)
+	(segment
+		(start 126.5 98.45)
+		(end 126.5 116.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "0d8cfb94-1268-4012-9584-d52f6d1654a5")
+	)
+	(segment
+		(start 106 98.45)
+		(end 106 116.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "1752c69c-6ce0-412a-bdb1-431cd5504aed")
+	)
+	(segment
+		(start 110.5 96.95)
+		(end 118.5 96.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "18ea275a-a6d6-4222-bf53-4cc83b6d0532")
+	)
+	(segment
+		(start 128 96.95)
+		(end 126.5 98.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "1f0c51e9-e757-4067-8664-333b555c5ef1")
+	)
+	(segment
+		(start 79.21 97.25)
+		(end 76 100.46)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "246ada08-6f6e-4ac9-890b-cf9241c604a8")
+	)
+	(segment
+		(start 150 96.95)
+		(end 148.5 98.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "277ea7d0-867a-4d4b-a08b-0884da2a6aaf")
+	)
+	(segment
+		(start 89.5 97.25)
+		(end 79.21 97.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "3d74eb96-da3e-473b-a46e-a321a07fdc77")
+	)
+	(segment
+		(start 107.5 96.95)
+		(end 106 98.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "5a70c742-cc17-4733-bc35-c7b8d1c553a9")
+	)
+	(segment
+		(start 110.5 96.95)
+		(end 107.5 96.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "5b0b5cdb-0110-45b9-8b64-b19588817a08")
+	)
+	(segment
+		(start 153 96.95)
+		(end 150 96.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "66644cee-906f-49b2-880b-cc37fb864c63")
+	)
+	(segment
+		(start 139 96.9)
+		(end 131 96.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "69ab3a2e-f8cf-46de-85f9-d438f2e473a3")
+	)
+	(segment
+		(start 89.5 97.25)
+		(end 97.5 97.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "6cea5fe2-3405-40a3-933f-100e4b80d9fa")
+	)
+	(segment
+		(start 148.5 98.45)
+		(end 148.5 116.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "6fef81b7-1fd1-435e-9b75-4c3f9a8854d8")
+	)
+	(segment
+		(start 161 96.85)
+		(end 153 96.85)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "89716ccf-393c-44d5-bda4-054996da313a")
+	)
+	(segment
+		(start 131 96.95)
+		(end 128 96.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "9b74d355-2585-4aa5-8be4-b62cc5d01cd0")
+	)
+	(segment
+		(start 161 96.85)
+		(end 161 96.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 3")
+		(uuid "daecf3c1-4375-455d-b04a-332deaf4e229")
+	)
+	(via
+		(at 148.5 116.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 3")
+		(uuid "3383bdd5-3366-423f-ac85-d77a1556a3fb")
+	)
+	(via
+		(at 106 116.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 3")
+		(uuid "55596b3e-e692-4f36-8219-e033024705ac")
+	)
+	(via
+		(at 126.5 116.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 3")
+		(uuid "71b6445c-744b-454b-931c-67d00d1346ea")
+	)
+	(segment
+		(start 85.45 116.95)
+		(end 82.5 114)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 3")
+		(uuid "0f7c51ae-0608-4fcf-9dc9-f5e575608d65")
+	)
+	(segment
+		(start 82.5 106.96)
+		(end 76 100.46)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 3")
+		(uuid "1e3b09af-60df-4bb0-ac28-d692733e2594")
+	)
+	(segment
+		(start 82.5 114)
+		(end 82.5 106.96)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 3")
+		(uuid "4030d1e2-b1d0-434c-afbc-f71512935ead")
+	)
+	(segment
+		(start 148.5 116.95)
+		(end 85.45 116.95)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 3")
+		(uuid "a05bbfc1-b5a7-4438-95d0-c4ceae54dac4")
+	)
+	(segment
+		(start 166 80.65)
+		(end 166 73.7375)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "0327bd82-e37c-4f25-87cd-13db08242fa9")
+	)
+	(segment
+		(start 161 109.2)
+		(end 166 104.2)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "1f265fed-c5bd-4c52-8d7b-fb0478eaa081")
+	)
+	(segment
+		(start 166 88.5)
+		(end 166 80.65)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "1f6efdc3-fd45-4932-8fa5-110d8ac49281")
+	)
+	(segment
+		(start 153 109.2)
+		(end 161 109.2)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "242dbb77-61a1-4f7b-b277-fe5fcb805e0c")
+	)
+	(segment
+		(start 166 96.35)
+		(end 166 88.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "2a43784a-0b37-4e16-934c-5aa3dcb844ee")
+	)
+	(segment
+		(start 153 93.5)
+		(end 161 93.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "3e1924ae-ac0a-4353-8921-0111cf2876ae")
+	)
+	(segment
+		(start 161 85.65)
+		(end 153 85.65)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "5d671c0a-752d-4387-9f81-7ec67befc711")
+	)
+	(segment
+		(start 166 104.2)
+		(end 166 96.35)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "6e0d8af7-d2ac-4636-affd-c68cde80f621")
+	)
+	(segment
+		(start 161 85.65)
+		(end 166 80.65)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "9d83ec8a-42a0-4256-b799-169ddd75e043")
+	)
+	(segment
+		(start 161 93.5)
+		(end 166 88.5)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "b2f7fc99-432a-43e7-96f9-6f42e94b4b25")
+	)
+	(segment
+		(start 161 101.35)
+		(end 166 96.35)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "cb72f624-3535-4be0-a6ea-5b7c86a4f5b4")
+	)
+	(segment
+		(start 161 101.35)
+		(end 153 101.35)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D4-A)")
+		(uuid "d549f56d-29d8-404c-82ba-b909333fd2bf")
+	)
+	(segment
+		(start 117 74.5)
+		(end 119.575 71.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 2")
+		(uuid "2b86c770-af04-4e29-864b-5fe94a397f23")
+	)
+	(segment
+		(start 119.575 71.925)
+		(end 121.5 71.925)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 2")
+		(uuid "6ca34b01-25a4-4d33-a8f1-5c00fb1d5cfe")
+	)
+	(via
+		(at 117 74.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/COL 2")
+		(uuid "b24a18fd-fc82-4259-99a6-ab3f7357d10e")
+	)
+	(segment
+		(start 117 84.5)
+		(end 117 74.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 2")
+		(uuid "0ef05e19-554a-4737-aea9-b9fcefc4ab40")
+	)
+	(segment
+		(start 113.74 87.76)
+		(end 117 84.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 2")
+		(uuid "196e7fdc-204f-482f-a9fd-fc5d70042436")
+	)
+	(segment
+		(start 76 87.76)
+		(end 113.74 87.76)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 2")
+		(uuid "91d154dc-c5f8-48da-8e2b-172dd207c920")
+	)
+	(segment
+		(start 96 74.5)
+		(end 97.9375 72.5625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 1")
+		(uuid "9b418dfe-83cd-4b6d-80df-d0c388847e63")
+	)
+	(segment
+		(start 97.9375 72.5625)
+		(end 101 72.5625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 1")
+		(uuid "c47a7015-5865-40cf-aa58-fa864645a030")
+	)
+	(via
+		(at 96 74.5)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/COL 1")
+		(uuid "d65a6bd2-755f-4e27-bafc-4c66f8fd0339")
+	)
+	(segment
+		(start 96 77.5)
+		(end 96 74.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 1")
+		(uuid "1b2adb8f-b939-4c5b-a331-ee696782913d")
+	)
+	(segment
+		(start 76 85.22)
+		(end 88.28 85.22)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 1")
+		(uuid "491018ea-1e55-40ed-a08b-06cad4c66f80")
+	)
+	(segment
+		(start 88.28 85.22)
+		(end 96 77.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 1")
+		(uuid "91579914-6bc2-43c2-9d09-bc64f0d53a6c")
+	)
+	(segment
+		(start 140 73)
+		(end 141.125 71.875)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 3")
+		(uuid "18ca510c-e1f0-4cff-b80c-59dfbe0f7e81")
+	)
+	(segment
+		(start 140 75)
+		(end 140 73)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 3")
+		(uuid "4181bc6c-a91e-430a-99cf-008d95926739")
+	)
+	(segment
+		(start 141.125 71.875)
+		(end 143.5 71.875)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 3")
+		(uuid "6dfc73fb-4da0-4e8f-9a0e-29a6c1dad238")
+	)
+	(via
+		(at 140 75)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/COL 3")
+		(uuid "40e50ece-f286-4c5f-9993-c96be5499b2f")
+	)
+	(segment
+		(start 140 85)
+		(end 140 75)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 3")
+		(uuid "4dcdb84e-50d1-4cbb-97f6-5e6fac803142")
+	)
+	(segment
+		(start 134.7 90.3)
+		(end 140 85)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 3")
+		(uuid "c682377c-a47d-4d64-9f07-a33a1d6cdbba")
+	)
+	(segment
+		(start 76 90.3)
+		(end 134.7 90.3)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 3")
+		(uuid "dd1c864b-c85f-48b8-af83-1f50e7e51451")
+	)
+	(segment
+		(start 163.8375 72.1625)
+		(end 166 72.1625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 4")
+		(uuid "288a750c-b7ad-4367-b6a7-1d75b7498fd4")
+	)
+	(segment
+		(start 162 74)
+		(end 163.8375 72.1625)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 4")
+		(uuid "87cedd72-2c2f-4554-851a-51639db86766")
+	)
+	(segment
+		(start 162 76)
+		(end 162 74)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/COL 4")
+		(uuid "987c3692-cd71-4914-8459-115217e87462")
+	)
+	(via
+		(at 162 76)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/COL 4")
+		(uuid "7fb875a7-1d55-4095-897e-b340e6efece5")
+	)
+	(segment
+		(start 76 92.84)
+		(end 145.3225 92.84)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 4")
+		(uuid "7a89d7ad-e608-4298-8dea-f2849b20d62d")
+	)
+	(segment
+		(start 145.3225 92.84)
+		(end 145.3225 92.6775)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 4")
+		(uuid "9fb0c499-2874-4125-85c7-45705af85b69")
+	)
+	(segment
+		(start 145.3225 92.6775)
+		(end 162 76)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/COL 4")
+		(uuid "f81894e3-5e2a-4ff6-95f0-8df3e7acbe06")
+	)
+	(segment
+		(start 149.7 81.25)
+		(end 145.5 85.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "0dfc821e-fe42-4303-bf52-c5fcdfdba9b9")
+	)
+	(segment
+		(start 103 85.45)
+		(end 103 112.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "281bb929-4b85-4d22-be0b-cce87bdf6fe4")
+	)
+	(segment
+		(start 139 81.2)
+		(end 131 81.2)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "30d0146c-666d-4acb-96ac-663f1e98b45b")
+	)
+	(segment
+		(start 89.5 81.88)
+		(end 76 95.38)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "4a041052-b0df-4481-b127-c6e6dff1d2f4")
+	)
+	(segment
+		(start 107.2 81.25)
+		(end 103 85.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "66adf0ec-3060-448b-b62d-76516464f3d5")
+	)
+	(segment
+		(start 145.5 85.45)
+		(end 145.5 112.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "8c53c024-8374-44e4-868a-bdaabbd08f20")
+	)
+	(segment
+		(start 89.5 81.55)
+		(end 89.5 81.88)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "8c7ed7f8-59b7-4744-bc1f-4119e03525ee")
+	)
+	(segment
+		(start 131 81.25)
+		(end 127.7 81.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "a3f24096-eb1e-463c-a3cd-1ddbefdd8653")
+	)
+	(segment
+		(start 153 81.15)
+		(end 161 81.15)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "b6c21d5f-d09f-49ea-918a-bfe01cd65e17")
+	)
+	(segment
+		(start 110.5 81.25)
+		(end 107.2 81.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "c30d5bb4-a07c-4797-8d55-d31dbf581947")
+	)
+	(segment
+		(start 89.5 81.55)
+		(end 97.5 81.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "c534a260-e4f6-4c60-8355-b75f4ea83938")
+	)
+	(segment
+		(start 110.5 81.25)
+		(end 118.5 81.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "cf398061-ae84-4b99-8fd2-929bdf941c77")
+	)
+	(segment
+		(start 127.7 81.25)
+		(end 123.5 85.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "da33f6a1-8e50-4e1c-8710-2d97c178bfb2")
+	)
+	(segment
+		(start 123.5 85.45)
+		(end 123.5 112.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "e4d8f4c9-bb8c-42ca-b4f5-71bcd626e5e1")
+	)
+	(segment
+		(start 153 81.25)
+		(end 149.7 81.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 1")
+		(uuid "f505edc6-73a8-4cc6-b181-190527bebd4f")
+	)
+	(via
+		(at 123.5 112.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 1")
+		(uuid "3dee546d-562a-454b-8c33-3e1237b61d45")
+	)
+	(via
+		(at 145.5 112.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 1")
+		(uuid "5ff6afe8-8722-4b42-bac8-0def387d3db5")
+	)
+	(via
+		(at 103 112.95)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 1")
+		(uuid "c32e5850-d98b-4a92-961f-dc9ce65fa44d")
+	)
+	(segment
+		(start 145.5 112.95)
+		(end 86.95 112.95)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 1")
+		(uuid "2d7abc6e-a019-4517-b9d7-5f00aae4db7c")
+	)
+	(segment
+		(start 86.5 112.5)
+		(end 86.5 105.88)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 1")
+		(uuid "4e7fff54-51bf-427f-879d-3608bfc8e674")
+	)
+	(segment
+		(start 86.95 112.95)
+		(end 86.5 112.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 1")
+		(uuid "96227b3e-2bb5-443c-b0a6-496d1b40b58f")
+	)
+	(segment
+		(start 86.5 105.88)
+		(end 76 95.38)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 1")
+		(uuid "f6cd8b59-5447-428a-9765-e68f2f429a72")
+	)
+	(segment
+		(start 148.35 89.1)
+		(end 147 90.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "056de9e9-91f3-44a0-869a-6c829c183e82")
+	)
+	(segment
+		(start 110.5 89.1)
+		(end 118.5 89.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "0d5e1376-9e80-47a2-a524-50fd90613ccb")
+	)
+	(segment
+		(start 131 89.1)
+		(end 126.35 89.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "0f3ba7d4-040e-405d-aa96-d8e6723286e3")
+	)
+	(segment
+		(start 104.5 90.45)
+		(end 104.5 115.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "22c54c44-b5ed-4ae5-9531-031f7a7cf792")
+	)
+	(segment
+		(start 147 90.45)
+		(end 147 115.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "3f49ec80-fdd8-4cf2-b34e-48eccdb57f2f")
+	)
+	(segment
+		(start 125 90.45)
+		(end 125 115.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "46256b9b-6d3b-4b23-82f1-73b2d0654576")
+	)
+	(segment
+		(start 89.5 89.4)
+		(end 84.52 89.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "556beec3-c193-4d1c-b521-d1c60c638557")
+	)
+	(segment
+		(start 126.35 89.1)
+		(end 125 90.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "59e9d1d7-cc93-457e-9617-59ee00368d51")
+	)
+	(segment
+		(start 105.85 89.1)
+		(end 104.5 90.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "8d98d711-981f-4f3b-bce6-4004994aff13")
+	)
+	(segment
+		(start 139 89.05)
+		(end 131 89.05)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "a1e4214c-9563-4c55-8cf6-3cba53de6d6b")
+	)
+	(segment
+		(start 161 89)
+		(end 153 89)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "ab187d97-f4b9-4823-a408-3a3e7cbe4e85")
+	)
+	(segment
+		(start 110.5 89.1)
+		(end 105.85 89.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "c166ac31-b777-4c9f-9ab2-8e29890931ad")
+	)
+	(segment
+		(start 84.52 89.4)
+		(end 76 97.92)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "cc99b0ff-a0d8-4806-ba61-81a07ece4fe0")
+	)
+	(segment
+		(start 153 89.1)
+		(end 148.35 89.1)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "d15b1d20-7164-4125-923a-4cc5541fd27d")
+	)
+	(segment
+		(start 89.5 89.4)
+		(end 97.5 89.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "/ROW 2")
+		(uuid "e2a0cb65-c4b7-4d69-b5a0-788fa4a007a3")
+	)
+	(via
+		(at 104.5 115.45)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 2")
+		(uuid "2304e2fa-9dec-47d7-aed6-eca42db06d22")
+	)
+	(via
+		(at 125 115.45)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 2")
+		(uuid "2c6cd457-cb33-4424-adf2-df6067765d61")
+	)
+	(via
+		(at 147 115.45)
+		(size 0.6)
+		(drill 0.3)
+		(layers "F.Cu" "B.Cu")
+		(net "/ROW 2")
+		(uuid "d4da44af-793d-4992-9275-0eb4bcf8635b")
+	)
+	(segment
+		(start 147 115.45)
+		(end 86.45 115.45)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 2")
+		(uuid "0ac6b034-92e3-461e-a926-20cc0f19c084")
+	)
+	(segment
+		(start 86.45 115.45)
+		(end 83.5 112.5)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 2")
+		(uuid "60aea2cd-0ae4-400c-8f01-e18ca78b455d")
+	)
+	(segment
+		(start 83.5 105.42)
+		(end 76 97.92)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 2")
+		(uuid "c3fbaa94-a05b-4dc3-9baf-3d0806920056")
+	)
+	(segment
+		(start 83.5 112.5)
+		(end 83.5 105.42)
+		(width 0.2)
+		(layer "B.Cu")
+		(net "/ROW 2")
+		(uuid "f7e151e7-f1c8-45b3-b0c3-6391ed6124c0")
+	)
+	(segment
+		(start 76 108.08)
+		(end 76 105.54)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "GND")
+		(uuid "1663be82-6a14-45c2-a82e-7eae7f8dbe57")
+	)
+	(segment
+		(start 143.5 89.05)
+		(end 143.5 81.2)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "16708bac-1eba-4706-86b1-e76e4115232f")
+	)
+	(segment
+		(start 143.5 96.9)
+		(end 143.5 89.05)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "25c732cb-251b-481c-8edb-b6e2bdf348d4")
+	)
+	(segment
+		(start 139 101.4)
+		(end 143.5 96.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "4a5a4b89-d164-4dcb-962d-d257f5988a26")
+	)
+	(segment
+		(start 143.5 81.2)
+		(end 143.5 73.45)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "4c284138-2172-4fde-9b94-7e238034be9d")
+	)
+	(segment
+		(start 139 85.7)
+		(end 143.5 81.2)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "51806b70-0fc1-4f5a-a435-58774b19bd70")
+	)
+	(segment
+		(start 143.5 104.75)
+		(end 143.5 96.9)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "6a85ca6d-4c59-417d-ba2a-b44a1a1417dd")
+	)
+	(segment
+		(start 139 93.55)
+		(end 143.5 89.05)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "6f4ebdf7-ab20-4077-a7ab-ce9dcdf125cc")
+	)
+	(segment
+		(start 139 109.25)
+		(end 131 109.25)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "ae155fea-b177-45ae-8584-3103f81767d0")
+	)
+	(segment
+		(start 139 101.4)
+		(end 131 101.4)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "af909d60-bfc2-465a-94b6-1daf3d090f65")
+	)
+	(segment
+		(start 139 93.55)
+		(end 131 93.55)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "b09c2948-3666-4b41-9e0c-60219f38f4fa")
+	)
+	(segment
+		(start 139 85.7)
+		(end 131 85.7)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "b5ef1827-e425-4251-9c47-8ff717be67fe")
+	)
+	(segment
+		(start 139 109.25)
+		(end 143.5 104.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net "Net-(D3-A)")
+		(uuid "f2c1e8c1-e8ad-46d3-9629-bd511cc17dc2")
 	)
 	(embedded_fonts no)
 )
