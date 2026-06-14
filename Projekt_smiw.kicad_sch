@@ -4905,6 +4905,16 @@
 	)
 	(wire
 		(pts
+			(xy 266.7 158.75) (xy 269.24 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "167a1027-57d3-45a6-b586-e0d7b0feda73")
+	)
+	(wire
+		(pts
 			(xy 44.45 83.82) (xy 45.72 83.82)
 		)
 		(stroke
@@ -5082,16 +5092,6 @@
 			(type default)
 		)
 		(uuid "24207463-10bf-4043-90ca-f5334c921892")
-	)
-	(wire
-		(pts
-			(xy 254 135.89) (xy 251.46 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2563ff83-e014-4167-8f4b-2516fea4b611")
 	)
 	(wire
 		(pts
@@ -5565,6 +5565,16 @@
 	)
 	(wire
 		(pts
+			(xy 251.46 135.89) (xy 254 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64c02474-442f-4602-9d0c-df6d7c05559f")
+	)
+	(wire
+		(pts
 			(xy 215.9 40.64) (xy 215.9 49.53)
 		)
 		(stroke
@@ -5732,6 +5742,16 @@
 			(type default)
 		)
 		(uuid "74ee0857-74bd-472e-818f-3036c75ff9cf")
+	)
+	(wire
+		(pts
+			(xy 266.7 148.59) (xy 269.24 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "759f766c-2780-4324-9595-3c5fc94e4a77")
 	)
 	(wire
 		(pts
@@ -5942,16 +5962,6 @@
 			(type default)
 		)
 		(uuid "8c53de96-9815-4660-987b-6c717c77005b")
-	)
-	(wire
-		(pts
-			(xy 266.7 158.75) (xy 269.24 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f7b623d-f559-4843-9c7e-e3e69234cffa")
 	)
 	(wire
 		(pts
@@ -6322,16 +6332,6 @@
 			(type default)
 		)
 		(uuid "ba93e076-068b-4208-8f46-a60f2311352f")
-	)
-	(wire
-		(pts
-			(xy 266.7 148.59) (xy 269.24 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baf1d133-c490-4cd9-8a80-144f0df575bd")
 	)
 	(wire
 		(pts
@@ -7389,7 +7389,7 @@
 		(uuid "0f32bc61-d0f8-431b-b423-1d75c59824f9")
 	)
 	(label "GPIO46"
-		(at 269.24 161.29 0)
+		(at 269.24 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7409,7 +7409,7 @@
 		(uuid "10eae1f6-127a-44c2-99c7-a7ed0bd4cc42")
 	)
 	(label "GPIO36"
-		(at 269.24 151.13 0)
+		(at 269.24 156.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7469,12 +7469,12 @@
 		(uuid "24bbd775-3e4c-45d7-b420-12c7743c9502")
 	)
 	(label "GPIO33"
-		(at 269.24 143.51 0)
+		(at 251.46 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "25ccb026-2bea-402b-8763-b5c49ed8a94f")
 	)
@@ -7519,12 +7519,12 @@
 		(uuid "34b7d08f-6cec-4eb8-b5ab-8095611a0541")
 	)
 	(label "MTCK"
-		(at 251.46 135.89 180)
+		(at 269.24 148.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "369e2764-3bb5-4440-82c6-7ac885f9eed5")
 	)
@@ -7569,7 +7569,7 @@
 		(uuid "3f6352b5-85d9-4c6b-ab1b-00538f8ae479")
 	)
 	(label "GPIO34"
-		(at 269.24 146.05 0)
+		(at 269.24 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7589,7 +7589,7 @@
 		(uuid "4a7574bb-0cd9-4e3a-ba8a-d7c499472404")
 	)
 	(label "GPIO21"
-		(at 251.46 138.43 180)
+		(at 251.46 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7649,7 +7649,7 @@
 		(uuid "50ce30ff-5c0c-4ad0-b3fb-40167af3a596")
 	)
 	(label "MTDO"
-		(at 269.24 135.89 0)
+		(at 269.24 146.05 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7659,7 +7659,7 @@
 		(uuid "596d0656-38f8-46b6-897d-277058a1da99")
 	)
 	(label "GPIO45"
-		(at 269.24 158.75 0)
+		(at 269.24 138.43 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7729,7 +7729,7 @@
 		(uuid "72b730d4-f353-4150-a934-7555c03243a0")
 	)
 	(label "GPIO38"
-		(at 269.24 156.21 0)
+		(at 269.24 151.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7999,7 +7999,7 @@
 		(uuid "d6b9eb36-aeb3-4f65-8db3-acea9f232d9a")
 	)
 	(label "XTAL_32K_N"
-		(at 251.46 143.51 180)
+		(at 251.46 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8049,7 +8049,7 @@
 		(uuid "de9bd061-6af4-413a-bbd1-3333d4a98118")
 	)
 	(label "MTDI"
-		(at 269.24 138.43 0)
+		(at 269.24 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8099,7 +8099,7 @@
 		(uuid "e593340b-5d36-4c41-aade-31fa27e02531")
 	)
 	(label "GPIO35"
-		(at 269.24 148.59 0)
+		(at 269.24 158.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8129,7 +8129,7 @@
 		(uuid "f97dc3e8-8420-4859-843c-1f3765edfa33")
 	)
 	(label "XTAL_32K_P"
-		(at 251.46 140.97 180)
+		(at 251.46 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
