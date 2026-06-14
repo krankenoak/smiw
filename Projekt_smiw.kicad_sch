@@ -7419,7 +7419,7 @@
 		(uuid "14419cb7-3a4b-44bc-a9bc-c16e55140044")
 	)
 	(label "SCK"
-		(at 176.53 146.05 180)
+		(at 176.53 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7529,7 +7529,7 @@
 		(uuid "369e2764-3bb5-4440-82c6-7ac885f9eed5")
 	)
 	(label "SDA"
-		(at 176.53 138.43 180)
+		(at 176.53 151.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7739,7 +7739,7 @@
 		(uuid "76e087e4-0f5a-435a-b3ee-b8277904bec4")
 	)
 	(label "MISO"
-		(at 176.53 143.51 180)
+		(at 176.53 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7829,7 +7829,7 @@
 		(uuid "a1db74e2-a089-42c3-a97b-fb73dd203322")
 	)
 	(label "CS FRAM SPI"
-		(at 176.53 151.13 180)
+		(at 176.53 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7919,7 +7919,7 @@
 		(uuid "b9c2759e-419e-4689-9a11-f4ce78dc1db2")
 	)
 	(label "SCL"
-		(at 176.53 135.89 180)
+		(at 176.53 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7939,7 +7939,7 @@
 		(uuid "bb485925-da39-46c1-90dd-0b6fd47b957f")
 	)
 	(label "CS BME280"
-		(at 176.53 148.59 180)
+		(at 176.53 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8029,7 +8029,7 @@
 		(uuid "db7b56d7-962b-432a-93ad-7afdaaa0bdb8")
 	)
 	(label "GPIO3"
-		(at 176.53 153.67 180)
+		(at 176.53 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8119,7 +8119,7 @@
 		(uuid "f8bff71c-8b08-41b3-876e-7888e8703c00")
 	)
 	(label "MOSI"
-		(at 176.53 140.97 180)
+		(at 176.53 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
