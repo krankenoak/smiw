@@ -4442,12 +4442,6 @@
 		(uuid "4e7c8038-3dcd-4eca-9699-ece62714f80f")
 	)
 	(junction
-		(at 251.46 133.35)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00d29549-db1d-4af7-ac4b-f5a9025f47d9")
-	)
-	(junction
 		(at 251.46 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4841,6 +4835,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 132.08) (xy 269.24 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "102db914-006a-43a4-96eb-fff402842fed")
+	)
+	(wire
+		(pts
 			(xy 194.31 161.29) (xy 194.31 163.83)
 		)
 		(stroke
@@ -5108,16 +5112,6 @@
 			(type default)
 		)
 		(uuid "2685429b-ecfa-4b0a-bc0b-c14817ee3d90")
-	)
-	(wire
-		(pts
-			(xy 251.46 135.89) (xy 251.46 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26bfaf79-b149-427e-b31a-010a462824ee")
 	)
 	(wire
 		(pts
@@ -6041,6 +6035,16 @@
 	)
 	(wire
 		(pts
+			(xy 269.24 133.35) (xy 266.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be47859-a6f6-47cd-9f36-195f7c0bf6b1")
+	)
+	(wire
+		(pts
 			(xy 210.82 24.13) (xy 210.82 27.94)
 		)
 		(stroke
@@ -6728,16 +6732,6 @@
 			(type default)
 		)
 		(uuid "fc368b15-8fa0-4f86-aae2-d3affc66f8a9")
-	)
-	(wire
-		(pts
-			(xy 266.7 133.35) (xy 269.24 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc8b7315-1810-4b61-9b8f-3831777b1dc1")
 	)
 	(wire
 		(pts
@@ -7525,12 +7519,12 @@
 		(uuid "34b7d08f-6cec-4eb8-b5ab-8095611a0541")
 	)
 	(label "MTCK"
-		(at 269.24 133.35 0)
+		(at 251.46 135.89 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "369e2764-3bb5-4440-82c6-7ac885f9eed5")
 	)
@@ -10224,7 +10218,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical"
 			(at 184.15 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -10333,6 +10327,84 @@
 			(project "Projekt_smiw"
 				(path "/0969a27d-5e52-4b0c-8093-78bbacbcaa35"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 269.24 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a41303fa-cd27-44ab-b804-3a46057613b5")
+		(property "Reference" "#PWR024"
+			(at 269.24 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 269.24 127 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 269.24 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 269.24 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 269.24 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "41bb8992-2ea7-49b0-b3e5-36fb69b1fb5f")
+		)
+		(instances
+			(project "Projekt_smiw"
+				(path "/0969a27d-5e52-4b0c-8093-78bbacbcaa35"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -10604,7 +10676,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Vertical"
 			(at 259.08 146.05 0)
 			(hide yes)
 			(show_name no)
